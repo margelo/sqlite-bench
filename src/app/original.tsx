@@ -262,7 +262,7 @@ export default function OriginalBenchmarkScreen() {
   const env = environment();
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView testID="original-screen" style={styles.container}>
       <Text style={styles.heading}>SQLite Benchmark</Text>
       <Text style={styles.sub}>
         {ITERATIONS} rows · {COOL_DOWN_MS}ms cooldown between tests · median of {ROUNDS} rounds
@@ -273,7 +273,7 @@ export default function OriginalBenchmarkScreen() {
       <Text style={styles.meta}>
         F2FS batch atomic write: {LIBRARIES.map((library) => `${library.label} ${label(batchAtomicWrite[library.label])}`).join(" · ")}
       </Text>
-      {status !== "done" && <Text style={styles.status}>{status}</Text>}
+      {status !== "done" && <Text testID="original-status" style={styles.status}>{status}</Text>}
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
         {GROUPS.map((group) => (
           <View key={group} style={styles.section}>
