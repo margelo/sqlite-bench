@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { Link } from "expo-router";
+import { useState } from "react";
 import { Pressable, ScrollView, Share, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { adapters } from "../benchmark/adapters";
 import { cases } from "../benchmark/cases";
+import { exportRun } from "../benchmark/export";
 import type { Mode } from "../benchmark/metadata";
 import { runBenchmarks, settings } from "../benchmark/runner";
 
@@ -10,21 +12,15 @@ type Run = Awaited<ReturnType<typeof runBenchmarks>>;
 
 export default function HomeScreen() {
   const [run, setRun] = useState<Run | null>(null);
-  const [status, setStatus] = useState("Starting…");
-  const [running, setRunning] = useState(true);
-  const started = useRef(false);
-
-  useEffect(() => {
-    if (started.current) return;
-    started.current = true;
-    start("library defaults");
-  }, []);
+  const [status, setStatus] = useState("Choose a run");
+  const [running, setRunning] = useState(false);
 
   function start(mode: Mode): void {
     setRun(null);
     setRunning(true);
     setStatus("Starting…");
     runBenchmarks(setStatus, { ...settings, mode }).then((result) => {
+      exportRun("suite", result);
       setRun(result);
       setStatus(result.failures.length ? `${result.failures.length} workload failures` : result.skipped.length ? `Done · ${result.skipped.length} unsupported workload` : "Done");
     }).catch((error: unknown) => {
@@ -38,10 +34,11 @@ export default function HomeScreen() {
       <Text style={styles.heading}>SQLite Benchmark</Text>
       <Text style={styles.sub}>{settings.iterations} rows · {settings.warmupRounds} warmup · {settings.measuredRounds} measured rounds · {settings.cooldownMs} ms cooldown</Text>
       <Text style={styles.sub}>{settings.iterations} full-read queries per case. The original screen used 1,000 rows and queries; these results are a new workload.</Text>
-      <Text style={styles.status}>{status}</Text>
+      <Text testID="suite-status" style={styles.status}>{status}</Text>
       {!running && <View style={styles.actions}>
-        <Pressable onPress={() => start("library defaults")} style={styles.share}><Text style={styles.shareText}>Run defaults</Text></Pressable>
-        <Pressable onPress={() => start("normalized WAL/FULL")} style={styles.share}><Text style={styles.shareText}>Run normalized</Text></Pressable>
+        <Pressable testID="run-defaults" onPress={() => start("library defaults")} style={styles.share}><Text style={styles.shareText}>Run defaults</Text></Pressable>
+        <Pressable testID="run-normalized" onPress={() => start("normalized WAL/FULL")} style={styles.share}><Text style={styles.shareText}>Run normalized</Text></Pressable>
+        <Link testID="open-original" href="/original" style={[styles.share, styles.shareText]}>Original four tests</Link>
       </View>}
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
         {run && <>
