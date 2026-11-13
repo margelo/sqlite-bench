@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 import { Pressable, ScrollView, Share, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -42,6 +43,7 @@ export default function HomeScreen() {
       {!running && <View style={styles.actions}>
         <Pressable onPress={() => start("library defaults")} style={styles.share}><Text style={styles.shareText}>Run defaults</Text></Pressable>
         <Pressable onPress={() => start("normalized WAL/FULL")} style={styles.share}><Text style={styles.shareText}>Run normalized</Text></Pressable>
+        <Link href="/original" style={[styles.share, styles.shareText]}>Original four tests</Link>
       </View>}
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
         {run && <>
