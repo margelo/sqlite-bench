@@ -8,6 +8,7 @@ import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
 import { open as nitroOpen } from "react-native-nitro-sqlite";
 import nitroPackage from "../../node_modules/react-native-nitro-sqlite/package.json";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { exportRun } from "../benchmark/export";
 
 // The four workloads from the original benchmark screen, with the same row
 // count, query count and cooldown. Every library gets the same cooldowns and
@@ -248,7 +249,7 @@ export default function OriginalBenchmarkScreen() {
             setBatchAtomicWrite({ ...flags });
           }
         }
-        console.log(`SQLITE_BENCH_ORIGINAL ${JSON.stringify({ ...environment(), batchAtomicWrite: flags, timings: all })}`);
+        exportRun("original", { ...environment(), batchAtomicWrite: flags, timings: all, summaries: summarize(all) });
         setStatus("done");
       } catch (e: unknown) {
         setStatus(`error: ${e instanceof Error ? e.message : String(e)}`);

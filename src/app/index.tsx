@@ -4,6 +4,7 @@ import { Pressable, ScrollView, Share, StyleSheet, Text, View } from "react-nati
 import { SafeAreaView } from "react-native-safe-area-context";
 import { adapters } from "../benchmark/adapters";
 import { cases } from "../benchmark/cases";
+import { exportRun } from "../benchmark/export";
 import type { Mode } from "../benchmark/metadata";
 import { runBenchmarks, settings } from "../benchmark/runner";
 
@@ -26,6 +27,7 @@ export default function HomeScreen() {
     setRunning(true);
     setStatus("Starting…");
     runBenchmarks(setStatus, { ...settings, mode }).then((result) => {
+      exportRun("suite", result);
       setRun(result);
       setStatus(result.failures.length ? `${result.failures.length} workload failures` : result.skipped.length ? `Done · ${result.skipped.length} unsupported workload` : "Done");
     }).catch((error: unknown) => {
