@@ -1,0 +1,17 @@
+version: 1
+requires:
+  platform:
+    - ios
+    - android
+steps:
+  - launch: com.ospfranco.opsqlitetest
+  - await: { visible: { id: run-defaults }, timeout: 15000 }
+  - await: { idle: true }
+  - echo: Home screen ready. Start the full suite with library defaults.
+  - tap: { text: Run defaults }
+  - await: { text: { in: { id: suite-status }, contains: warmup }, timeout: 15000 }
+  - echo: Waiting for the warmup and three measured rounds of every case.
+  - await: { text: { in: { id: suite-status }, contains: Done }, timeout: 3600000 }
+  - tool: screenshot
+    args:
+      scale: 1
