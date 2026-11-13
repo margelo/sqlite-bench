@@ -1,6 +1,8 @@
 # SQLite benchmark
 
-This Expo app compares ordinary SQLite operations through op-sqlite, Nitro SQLite, and expo-sqlite. Build a Release app for iOS or Android, open it, and let the default run finish. The screen also offers a normalized run. Use **Share run data and manifest** to save the samples, checksums, failures, and environment details as JSON.
+This Expo app compares ordinary SQLite operations through op-sqlite, Nitro SQLite, and expo-sqlite. Build a Release app for iOS or Android, open it, and tap **Run defaults** for the suite, **Run normalized** for the suite with matched PRAGMAs, or **Original four tests** for the 1,000-row screen from the published charts. Use **Share run data and manifest** to save the samples, checksums, failures, and environment details as JSON.
+
+The latest results, with screenshots and raw samples, are in [results/2026-11-13](results/2026-11-13).
 
 Each workload uses 250 rows and, for read cases, 250 queries per sample. It runs one warmup round followed by three measured rounds. The runner rotates library order for each case and round, waits 2.5 seconds after setup for every sample, and measures only the operation loop or transaction. It checks affected row counts and stored values after writes and consumes and checks all selected values during full reads. A failed check appears on screen and excludes that library and case from the summary. Individual samples, median, and minimum-to-maximum range appear together.
 
