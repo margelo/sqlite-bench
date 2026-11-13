@@ -1,0 +1,19 @@
+version: 1
+requires:
+  platform:
+    - ios
+    - android
+steps:
+  - launch: com.ospfranco.opsqlitetest
+  - await: { visible: { text: Original four tests }, timeout: 15000 }
+  - await: { idle: true }
+  - echo: Home screen ready. Open the original four tests, which start running as
+      soon as the screen mounts.
+  - tap: { text: Original four tests }
+  - await: { visible: { text: median of 3 rounds }, timeout: 15000 }
+  - await: { visible: { text: round 1 of 3 }, timeout: 15000 }
+  - echo: Waiting for all three rounds to finish.
+  - await: { hidden: { text: "of 3: running" }, timeout: 900000 }
+  - tool: screenshot
+    args:
+      scale: 1
