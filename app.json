@@ -42,8 +42,7 @@
       "expo-image",
       "expo-sqlite",
       "expo-status-bar",
-      "expo-web-browser",
-      "expo-ios-scene-lifecycle-plugin"
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
