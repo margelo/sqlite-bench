@@ -50,7 +50,8 @@ async function runOne(adapter: Adapter, benchmarkCase: Case, round: number, opti
     await sleep(options.cooldownMs);
     const start = performance.now();
     const checksum = await workload.run(db, options.iterations);
-    const ms = performance.now() - start;
+    const elapsed = performance.now() - start;
+    const ms = workload.reportedMs?.() ?? elapsed;
     await workload.check(db, options.iterations, checksum);
     return { library: adapter.id, caseId: benchmarkCase.id, round, ms, checksum };
   } finally {

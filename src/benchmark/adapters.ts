@@ -14,6 +14,9 @@ const op: Adapter = {
     return {
       executeSync: (sql, params) => normalize(db.executeSync(sql, params)),
       executeAsync: async (sql, params) => normalize(await db.execute(sql, params)),
+      executeRawSync: (sql, params) => ({ rows: db.executeRawSync(sql, params).rawRows }),
+      executeRawAsync: async (sql, params) => ({ rows: (await db.executeRaw(sql, params)).rawRows }),
+      blob: (bytes) => bytes,
       transaction: async (callback) => db.transaction(async (tx) => callback({
         executeAsync: async (sql, params) => normalize(await tx.execute(sql, params)),
       })),
@@ -52,20 +55,25 @@ const nitro: Adapter = {
   open: (name): Connection => {
     const db = nitroOpen({ name });
     return {
-      executeSync: (sql, params) => nitroResult(db.execute(sql, params)),
-      executeAsync: async (sql, params) => nitroResult(await db.executeAsync(sql, params)),
+      executeSync: (sql, params) => nitroResult(db.execute(sql, nitroParams(params))),
+      executeAsync: async (sql, params) => nitroResult(await db.executeAsync(sql, nitroParams(params))),
+      executeRawSync: (sql, params) => ({ rows: db.executeRaw(sql, nitroParams(params)).rows }),
+      executeRawAsync: async (sql, params) => ({ rows: (await db.executeRawAsync(sql, nitroParams(params))).rows }),
+      // Nitro binds ArrayBuffer as a BLOB.
+      blob: (bytes) => bytes.slice().buffer,
       transaction: async (callback) => db.transaction(async (tx) => callback({
-        executeAsync: async (sql, params) => nitroResult(await tx.executeAsync(sql, params)),
+        executeAsync: async (sql, params) => nitroResult(await tx.executeAsync(sql, nitroParams(params))),
       })),
       prepare: (sql) => {
         const statement = db.prepare(sql);
         return {
-          executeSync: (params) => nitroResult(statement.execute(params)),
-          executeAsync: async (params) => nitroResult(await statement.executeAsync(params)),
+          executeSync: (params) => nitroResult(statement.execute(nitroParams(params))),
+          executeAsync: async (params) => nitroResult(await statement.executeAsync(nitroParams(params))),
           dispose: () => statement.finalize(),
         };
       },
-      batchAsync: async (sql, params) => (await db.executeBatchAsync([{ query: sql, params }])).rowsAffected,
+      batchAsync: async (sql, params) => (await db.executeBatchAsync([{ query: sql, params: nitroBatchParams(params) }])).rowsAffected,
+      batchSync: (sql, params) => db.executeBatch([{ query: sql, params: nitroBatchParams(params) }]).rowsAffected,
       close: () => db.close(),
     };
   },
@@ -79,6 +87,18 @@ const expo: Adapter = {
     return {
       executeSync: (sql, params) => expoSync(db, sql, params),
       executeAsync: (sql, params) => expoAsync(db, sql, params),
+      // Expo returns rows as arrays only from a statement, so each call prepares and finalizes one.
+      executeRawSync: (sql, params = []) => {
+        const statement = db.prepareSync(sql);
+        try { return { rows: statement.executeForRawResultSync(expoParams(params)).getAllSync() }; }
+        finally { statement.finalizeSync(); }
+      },
+      executeRawAsync: async (sql, params = []) => {
+        const statement = await db.prepareAsync(sql);
+        try { return { rows: await (await statement.executeForRawResultAsync(expoParams(params))).getAllAsync() }; }
+        finally { await statement.finalizeAsync(); }
+      },
+      blob: (bytes) => bytes,
       transaction: async (callback) => db.withExclusiveTransactionAsync(async (tx) => callback({
         executeAsync: async (sql, params) => expoAsync(tx, sql, params),
       })),
@@ -109,6 +129,19 @@ export const adapters: Adapter[] = [op, nitro, expo];
 
 function normalize(result: { rows: Row[]; rowsAffected: number }): QueryResult {
   return { rows: result.rows, rowsAffected: result.rowsAffected };
+}
+
+// The case code builds parameters with the adapter's own blob(), so these casts change only types.
+function nitroParams(params: SqlValue[] | undefined) {
+  return params as Parameters<ReturnType<typeof nitroOpen>["execute"]>[1];
+}
+
+function nitroBatchParams(params: SqlValue[][]) {
+  return params as NonNullable<ReturnType<typeof nitroParams>>[];
+}
+
+function expoParams(params: SqlValue[]) {
+  return params as Parameters<ReturnType<typeof openDatabaseSync>["runSync"]>[1][];
 }
 
 function nitroResult(result: ReturnType<ReturnType<typeof nitroOpen>["execute"]>): QueryResult {

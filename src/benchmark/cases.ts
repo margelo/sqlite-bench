@@ -1,3 +1,4 @@
+import { featureCases } from "./feature-cases";
 import { readCases } from "./read-cases";
 import { writeCases } from "./write-cases";
 import { assertEqual, checkInserted, consume, dropTable, emptyTable, expectedChecksum, INSERT, populatedTable, SELECT, values } from "./fixtures";
@@ -77,4 +78,5 @@ export const cases: Case[] = [
   ),
   ...readCases,
   ...writeCases,
+  ...featureCases,
 ];
