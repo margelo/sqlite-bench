@@ -1,0 +1,81 @@
+{
+  "benchmark": {
+    "repository": "https://github.com/ospfranco/sqlite-bench",
+    "commit": "d7c513ca2eee7c7d5702abc19a6f86e2df551f94",
+    "locked": {
+      "nitro": "9.6.0",
+      "op": "18.1.3",
+      "nitroModules": "0.36.1",
+      "expoSQLite": "57.0.0",
+      "reactNative": "0.86.0"
+    }
+  },
+  "nitroMain": "45f400cb8d617fb2c807ffc7555db80449eb7afe",
+  "opMain": "08c691379999ebf2ed98279d5fa66c047535d06f",
+  "host": "Apple M4 Pro",
+  "simulator": "iPhone 18 Pro iOS 27.0",
+  "android": "SM-G977B Android 12 API 31",
+  "build": "Release Hermes",
+  "baselineInstrumentation": "Only 3 outer repetitions, result export after each complete suite. Timed loops and cooldown retained.",
+  "iphone": "iPhone 13 Pro iOS 26.5.2",
+  "application": "com.chrispader.sqlitebenchreview",
+  "latestRegistry": {
+    "nitro": "9.8.2",
+    "op": "18.2.5",
+    "nitroModules": "0.37.1"
+  },
+  "registryChecked": "2026-09-25",
+  "variants": [
+    {
+      "revision": "locked-d7c513c",
+      "nitro": "9.6.0",
+      "op": "18.1.3",
+      "modules": "0.36.1"
+    },
+    {
+      "revision": "published-9.8.2",
+      "nitro": "9.8.2",
+      "op": "18.1.3",
+      "modules": "0.36.1"
+    },
+    {
+      "revision": "nitro-main-45f400c-op-18.2.5",
+      "nitro": "main 45f400cb8d617fb2c807ffc7555db80449eb7afe",
+      "op": "18.2.5",
+      "modules": "0.36.1"
+    },
+    {
+      "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+      "nitro": "main 45f400cb8d617fb2c807ffc7555db80449eb7afe",
+      "op": "18.2.5",
+      "modules": "0.37.1"
+    }
+  ],
+  "mainTarballSha256": "f74da5b2d432d28909cfdc4559a11192ea2d6c487d4734bd57ec373fd5c79889",
+  "opReleaseCommit": "b81213bc1307331e561d9923a9189dd597c9c3bf",
+  "nitroReleaseCommit": "d2da02dbe3461188fe86cf5032a89c73a83e8c13",
+  "nitroModulesReleaseCommit": "605017127c16f9d502f527097ffed77439d8ce6c",
+  "completedAt": "2026-09-25T17:06:10.536072+00:00",
+  "measurementGroups": 267,
+  "individualMeasuredTimings": 801,
+  "excludedSessions": [
+    1790353107301,
+    1790353822289
+  ],
+  "excludedRecordKinds": [
+    {
+      "started": 1790353548800,
+      "kind": "diagnostic",
+      "reason": "File names collided and Unicode alias produced invalid JSON. Rerun diagnostics with unique files and numeric code units."
+    },
+    {
+      "started": 1790353822289,
+      "kind": "diagnostic",
+      "reason": "Unicode alias caused invalid JSON export for Nitro. Complete main diagnostics collected on physical devices using numeric code units."
+    },
+    {
+      "started": 1790353997981,
+      "kind": "diagnostic"
+    }
+  ]
+}

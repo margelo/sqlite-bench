@@ -1,0 +1,2 @@
+steps:
+  - launch: com.chrispader.sqlitebenchreview

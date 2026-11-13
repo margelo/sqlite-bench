@@ -1,0 +1,18 @@
+{
+  "traceFile": "/var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826.trace",
+  "exportedFiles": {
+    "cpu": null,
+    "hangs": null,
+    "leaks": null
+  },
+  "exportDiagnostics": {
+    "tocSchemas": [],
+    "cpuSchemaUsed": null,
+    "errors": {
+      "toc": "Command failed: xctrace export --input /var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826.trace --toc\nExport failed: Document Missing Template Error\n",
+      "cpu": "Brute-force export also failed for schemas: [time-profile, cpu-profile, time-sample].",
+      "hangs": "Command failed: xctrace export --input /var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826.trace --output /var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826_raw_hangs.xml --xpath /trace-toc/run[@number=\"1\"]/data/table[@schema=\"potential-hangs\"]\nExport failed: Document Missing Template Error\nExport failed: Unexpected internal error\n",
+      "leaks": "Command failed: xctrace export --input /var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826.trace --output /var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826_raw_leaks.xml --xpath /trace-toc/run[@number=\"1\"]/tracks/track[@name=\"Leaks\"]/details/detail[@name=\"Leaks\"]\nExport failed: Document Missing Template Error\nExport failed: Unexpected internal error\n"
+    }
+  }
+}

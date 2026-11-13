@@ -1,0 +1,10 @@
+{
+  "message": "Step added to \"benchmark-launch\" flow",
+  "toolResult": {
+    "restarted": true,
+    "bundleId": "com.chrispader.sqlitebenchreview"
+  },
+  "stepCount": 1,
+  "recorded": "1. launch: com.chrispader.sqlitebenchreview",
+  "savedTo": "/Users/chris/Projects/Margelo/sqlite-bench-review/.argent/flows/benchmark-launch.yaml"
+}

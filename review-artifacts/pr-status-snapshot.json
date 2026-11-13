@@ -1,0 +1,754 @@
+[
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/sqlite-text-byte-length",
+    "headRefOid": "8134c9cf701a9400ed2422288a7582c774bd0b7a",
+    "isDraft": true,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:13:18Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351642/job/108191376197",
+        "name": "Build Android Example App (24)",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:21:53Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351650/job/108191376704",
+        "name": "Build iOS Example App (static_frameworks, static)",
+        "startedAt": "2026-09-25T18:06:59Z",
+        "status": "COMPLETED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:26:36Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351706/job/108191376881",
+        "name": "Build macOS Example App",
+        "startedAt": "2026-09-25T18:06:59Z",
+        "status": "COMPLETED",
+        "workflowName": "Build macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:07:02Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351623/job/108191376270",
+        "name": "Format C++",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:07:07Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351724/job/108191376284",
+        "name": "Compile TypeScript (tsc)",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:21:01Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351658/job/108191376426",
+        "name": "Harness Tests (Android)",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Test Harness Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:26:46Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351714/job/108191376684",
+        "name": "Harness Tests (iOS)",
+        "startedAt": "2026-09-25T18:07:00Z",
+        "status": "COMPLETED",
+        "workflowName": "Test Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:16:42Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351664/job/108191377185",
+        "name": "macOS Integration Tests",
+        "startedAt": "2026-09-25T18:06:58Z",
+        "status": "COMPLETED",
+        "workflowName": "Test macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:11:32Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351642/job/108191376692",
+        "name": "Build Android Example App (26)",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:21:23Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351650/job/108191376876",
+        "name": "Build iOS Example App (no_frameworks)",
+        "startedAt": "2026-09-25T18:06:56Z",
+        "status": "COMPLETED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:07:17Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36171351724/job/108191376745",
+        "name": "Lint and test TypeScript",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-09-25T18:06:28Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/margelo/react-native-nitro-sqlite/7AjkbsrxLczvsVfsSR1FYsCzvDLa"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:06:52Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-09-25T18:06:52Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "title": "fix: preserve embedded NUL bytes in SQLite text results",
+    "url": "https://github.com/margelo/react-native-nitro-sqlite/pull/386"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/utf8-property-name-cache",
+    "headRefOid": "0abe8f78b2464718074a27d611c0073c9cc1c1bc",
+    "isDraft": true,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:20:14Z",
+        "conclusion": "FAILURE",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538901/job/108192007981",
+        "name": "Harness Android (Default, new architecture)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Harness Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538989/job/108192008645",
+        "name": "Build iOS Example App (static_frameworks, static)",
+        "startedAt": "2026-09-25T18:08:38Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538872/job/108192009099",
+        "name": "Harness iOS (Default, new architecture)",
+        "startedAt": "2026-09-25T18:08:38Z",
+        "status": "QUEUED",
+        "workflowName": "Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:17:12Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538859/job/108192007691",
+        "name": "Build Android Example App (24)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:08:50Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538860/job/108192007012",
+        "name": "Format C++",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:09:06Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538964/job/108192008777",
+        "name": "Compile TypeScript (tsc)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:09:31Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538903/job/108192007674",
+        "name": "Run Nitrogen for example module (react-native-nitro-test) (ubuntu-latest)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Run Nitrogen"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:33:21Z",
+        "conclusion": "FAILURE",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538872/job/108192009188",
+        "name": "Harness iOS (ASan, new architecture)",
+        "startedAt": "2026-09-25T18:16:50Z",
+        "status": "COMPLETED",
+        "workflowName": "Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538989/job/108192008450",
+        "name": "Build iOS Example App (no_frameworks)",
+        "startedAt": "2026-09-25T18:08:38Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:17:08Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538859/job/108192008071",
+        "name": "Build Android Example App (26)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:21:38Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538901/job/108192008238",
+        "name": "Harness Android (ASan, new architecture)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Harness Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:13:44Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538903/job/108192008079",
+        "name": "Run Nitrogen for example module (react-native-nitro-test) (windows-latest)",
+        "startedAt": "2026-09-25T18:08:41Z",
+        "status": "COMPLETED",
+        "workflowName": "Run Nitrogen"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538872/job/108192009379",
+        "name": "Harness iOS (TSan, new architecture)",
+        "startedAt": "2026-09-25T18:08:38Z",
+        "status": "QUEUED",
+        "workflowName": "Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:09:34Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/nitro/actions/runs/36171538964/job/108192009146",
+        "name": "Lint TypeScript (eslint, prettier)",
+        "startedAt": "2026-09-25T18:08:40Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:07:25Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://backend.blacksmith.sh/track/enable-autofix?expires=1792951645&installation_model_id=14073&pr_number=1658&ref=codesmith_check&repository=margelo%2Fnitro&return_to=https%3A%2F%2Fgithub.com%2Fmargelo%2Fnitro%2Fpull%2F1658&utm_campaign=margelo%2Fnitro&utm_source=codesmith-check&signature=119111c03d2021374b6f433579ccc3d756d2c3bed178fd44c5b4ec6ed8ecdfde",
+        "name": "[code]smith",
+        "startedAt": "2026-09-25T18:07:28Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-09-25T18:07:07Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/margelo/nitro-docs/9s3s5P27NkJC2HM6Kdng8ZfGfZdn"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:07:29Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-09-25T18:07:29Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "title": "fix: preserve UTF-8 dynamic property names",
+    "url": "https://github.com/margelo/nitro/pull/1658"
+  },
+  {
+    "baseRefName": "fix/sqlite-text-byte-length",
+    "headRefName": "perf/positional-query-results",
+    "headRefOid": "e2f883817a1acd1cc3341cc189b1067e389b35a3",
+    "isDraft": true,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114835/job/108203712006",
+        "name": "Build iOS Example App (static_frameworks, static)",
+        "startedAt": "2026-09-25T18:42:22Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114861/job/108203711135",
+        "name": "Build macOS Example App",
+        "startedAt": "2026-09-25T18:42:22Z",
+        "status": "QUEUED",
+        "workflowName": "Build macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114895/job/108203711415",
+        "name": "Harness Tests (iOS)",
+        "startedAt": "2026-09-25T18:42:22Z",
+        "status": "QUEUED",
+        "workflowName": "Test Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114784/job/108203711244",
+        "name": "macOS Integration Tests",
+        "startedAt": "2026-09-25T18:42:22Z",
+        "status": "QUEUED",
+        "workflowName": "Test macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175115277/job/108203713405",
+        "name": "Build Android Example App (24)",
+        "startedAt": "2026-09-25T18:42:25Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114789/job/108203711205",
+        "name": "Harness Tests (Android)",
+        "startedAt": "2026-09-25T18:42:24Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Test Harness Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:42:37Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114978/job/108203712097",
+        "name": "Format C++",
+        "startedAt": "2026-09-25T18:42:24Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:42:46Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175115105/job/108203712574",
+        "name": "Compile TypeScript (tsc)",
+        "startedAt": "2026-09-25T18:42:25Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175114835/job/108203711614",
+        "name": "Build iOS Example App (no_frameworks)",
+        "startedAt": "2026-09-25T18:42:22Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175115277/job/108203713197",
+        "name": "Build Android Example App (26)",
+        "startedAt": "2026-09-25T18:42:24Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:42:50Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36175115105/job/108203713107",
+        "name": "Lint and test TypeScript",
+        "startedAt": "2026-09-25T18:42:24Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-09-25T18:42:24Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/margelo/react-native-nitro-sqlite/ENMEEYu1T4u73y52TXynxsBkt8mW"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:42:25Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-09-25T18:42:25Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "title": "perf: convert positional query results without native row copies",
+    "url": "https://github.com/margelo/react-native-nitro-sqlite/pull/389"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "perf/reuse-batch-statements",
+    "headRefOid": "cf41541fc67b1d54cf4b7b1551f93fa4355c789b",
+    "isDraft": true,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427509/job/108198206680",
+        "name": "Build iOS Example App (static_frameworks, static)",
+        "startedAt": "2026-09-25T18:26:22Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427625/job/108198207139",
+        "name": "Build macOS Example App",
+        "startedAt": "2026-09-25T18:26:22Z",
+        "status": "QUEUED",
+        "workflowName": "Build macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427818/job/108198208353",
+        "name": "Harness Tests (iOS)",
+        "startedAt": "2026-09-25T18:26:22Z",
+        "status": "QUEUED",
+        "workflowName": "Test Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427667/job/108198207000",
+        "name": "macOS Integration Tests",
+        "startedAt": "2026-09-25T18:26:22Z",
+        "status": "QUEUED",
+        "workflowName": "Test macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:31:32Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427690/job/108198207075",
+        "name": "Build Android Example App (24)",
+        "startedAt": "2026-09-25T18:26:25Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:26:34Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427609/job/108198206968",
+        "name": "Format C++",
+        "startedAt": "2026-09-25T18:26:24Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:27:33Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427688/job/108198207830",
+        "name": "Compile TypeScript (tsc)",
+        "startedAt": "2026-09-25T18:27:15Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:27:13Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427672/job/108198207513",
+        "name": "Database lifecycle tests",
+        "startedAt": "2026-09-25T18:26:49Z",
+        "status": "COMPLETED",
+        "workflowName": "Test C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:40:04Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427654/job/108198207169",
+        "name": "Harness Tests (Android)",
+        "startedAt": "2026-09-25T18:26:36Z",
+        "status": "COMPLETED",
+        "workflowName": "Test Harness Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427509/job/108198206847",
+        "name": "Build iOS Example App (no_frameworks)",
+        "startedAt": "2026-09-25T18:26:22Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:32:21Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427690/job/108198207317",
+        "name": "Build Android Example App (26)",
+        "startedAt": "2026-09-25T18:26:25Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:28:21Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173427688/job/108198208240",
+        "name": "Lint and test TypeScript",
+        "startedAt": "2026-09-25T18:27:16Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint TypeScript"
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-09-25T18:26:27Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/margelo/react-native-nitro-sqlite/2BZrdwy8nU2jCiriLXK9iiPxQidD"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:26:28Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-09-25T18:26:28Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "title": "perf: reuse prepared statements for grouped batch parameters",
+    "url": "https://github.com/margelo/react-native-nitro-sqlite/pull/387"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/private-sqlite-symbols",
+    "headRefOid": "5dc5b680992b6e47d034717242a78edc93dc78de",
+    "isDraft": true,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571873/job/108198679086",
+        "name": "Build iOS Example App (static_frameworks, static)",
+        "startedAt": "2026-09-25T18:27:43Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571770/job/108198678695",
+        "name": "Build macOS Example App",
+        "startedAt": "2026-09-25T18:27:43Z",
+        "status": "QUEUED",
+        "workflowName": "Build macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571698/job/108198678724",
+        "name": "Harness Tests (iOS)",
+        "startedAt": "2026-09-25T18:27:43Z",
+        "status": "QUEUED",
+        "workflowName": "Test Harness iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571900/job/108198679074",
+        "name": "macOS Integration Tests",
+        "startedAt": "2026-09-25T18:27:43Z",
+        "status": "QUEUED",
+        "workflowName": "Test macOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:35:00Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571716/job/108198678294",
+        "name": "Build Android Example App (24)",
+        "startedAt": "2026-09-25T18:28:55Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:28:32Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571785/job/108198679015",
+        "name": "Format C++",
+        "startedAt": "2026-09-25T18:28:23Z",
+        "status": "COMPLETED",
+        "workflowName": "Lint C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:29:02Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571884/job/108198678985",
+        "name": "Database lifecycle tests",
+        "startedAt": "2026-09-25T18:28:34Z",
+        "status": "COMPLETED",
+        "workflowName": "Test C++"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:40:31Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571585/job/108198677878",
+        "name": "Harness Tests (Android)",
+        "startedAt": "2026-09-25T18:27:47Z",
+        "status": "COMPLETED",
+        "workflowName": "Test Harness Android"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571873/job/108198679389",
+        "name": "Build iOS Example App (no_frameworks)",
+        "startedAt": "2026-09-25T18:27:43Z",
+        "status": "QUEUED",
+        "workflowName": "Build iOS"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:33:51Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/margelo/react-native-nitro-sqlite/actions/runs/36173571716/job/108198678588",
+        "name": "Build Android Example App (26)",
+        "startedAt": "2026-09-25T18:28:52Z",
+        "status": "COMPLETED",
+        "workflowName": "Build Android"
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-09-25T18:27:47Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/margelo/react-native-nitro-sqlite/GpguBtDpUmc3JSNtbtY35iPTghn4"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-25T18:27:48Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-09-25T18:27:48Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "title": "fix: isolate bundled SQLite symbols from other engines",
+    "url": "https://github.com/margelo/react-native-nitro-sqlite/pull/390"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "chore/current-sqlite-libraries",
+    "headRefOid": "223e6ef0a9ea015f76acc6e67124120d5f0081a0",
+    "isDraft": true,
+    "statusCheckRollup": [],
+    "title": "chore: refresh SQLite benchmark dependencies",
+    "url": "https://github.com/ospfranco/sqlite-bench/pull/1"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/comparable-benchmark-runs",
+    "headRefOid": "298481daff0e6efa7415e1cfa94ae6799b3b905b",
+    "isDraft": true,
+    "statusCheckRollup": [],
+    "title": "fix: make SQLite benchmark runs comparable",
+    "url": "https://github.com/ospfranco/sqlite-bench/pull/2"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/prepared-and-batch-benchmarks",
+    "headRefOid": "1484b1f9f72df8fc98cf1f5ab0073aa4cf5f6a9f",
+    "isDraft": true,
+    "statusCheckRollup": [],
+    "title": "feat: benchmark prepared and batch SQLite APIs",
+    "url": "https://github.com/ospfranco/sqlite-bench/pull/3"
+  }
+]

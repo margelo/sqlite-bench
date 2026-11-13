@@ -1,0 +1,10 @@
+{
+  "report": "# iOS Instruments Analysis\n\n**Trace:** `native-profiler-20260925-161826.trace`  |  **Platform:** iOS  |  **Analyzed:** 2026-09-25T16:25:46.248Z\n\n> **Export warnings:**\n> - **cpu**: CPU time-profile export failed — xctrace could not export CPU data from this trace. The trace template may not include a Time Profiler instrument, or the schema name did not match any known CPU profile schema (time-profile, cpu-profile, time-sample). Check native-profiler-stop output for exportDiagnostics.\n> - **hangs**: Hangs export failed — no potential-hangs table found in trace.\n\n---\n\n⚠️ **Analysis failed** — 2 of 3 queries errored. See the **Export warnings** block above. No findings could be produced from this trace.\n\n> Full report saved — 0 bottleneck(s) total, summary inline. Use the Read tool on the `reportFile` path in this result to view all details.",
+  "reportFile": "/var/folders/js/9ljr9cm56sd8401l8qpx726r0000gn/T/argent-profiler-cwd/native-profiler-20260925-161826-report.md",
+  "bottlenecksTotal": 0,
+  "status": "analysis_failed",
+  "exportErrors": {
+    "cpu": "CPU time-profile export failed — xctrace could not export CPU data from this trace. The trace template may not include a Time Profiler instrument, or the schema name did not match any known CPU profile schema (time-profile, cpu-profile, time-sample). Check native-profiler-stop output for exportDiagnostics.",
+    "hangs": "Hangs export failed — no potential-hangs table found in trace."
+  }
+}

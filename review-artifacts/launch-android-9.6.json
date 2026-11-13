@@ -1,0 +1,21 @@
+{
+  "flow": "benchmark-launch",
+  "device": "R3CM90H6A2N",
+  "executionPrerequisite": "",
+  "ok": true,
+  "passed": 1,
+  "failed": 0,
+  "skipped": 0,
+  "errored": 0,
+  "steps": [
+    {
+      "index": 0,
+      "kind": "launch",
+      "flow": "benchmark-launch",
+      "status": "pass",
+      "durationMs": 3506
+    }
+  ],
+  "startedAt": 1790352611884,
+  "durationMs": 4213
+}

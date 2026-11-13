@@ -9,7 +9,7 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "com.ospfranco.opsqlitetest",
+      "bundleIdentifier": "com.chrispader.sqlitebenchreview",
       "appleTeamId": "24CMR7378R"
     },
     "android": {
@@ -20,7 +20,7 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.ospfranco.opsqlitetest"
+      "package": "com.chrispader.sqlitebenchreview"
     },
     "web": {
       "output": "static",
@@ -43,7 +43,8 @@
       "expo-sqlite",
       "expo-status-bar",
       "expo-web-browser",
-      "expo-ios-scene-lifecycle-plugin"
+      "expo-ios-scene-lifecycle-plugin",
+      "./plugins/review-network"
     ],
     "experiments": {
       "typedRoutes": true,

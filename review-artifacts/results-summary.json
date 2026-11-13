@@ -1,0 +1,4274 @@
+[
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 9812.023492991924,
+    "minimum": 9785.151493012905,
+    "maximum": 9872.745569974184,
+    "values": [
+      9872.745569974184,
+      9812.023492991924,
+      9785.151493012905
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 49207.539157003164,
+    "minimum": 48373.41723498702,
+    "maximum": 49353.52077201009,
+    "values": [
+      48373.41723498702,
+      49353.52077201009,
+      49207.539157003164
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 6516.429149001837,
+    "minimum": 6313.084842026234,
+    "maximum": 6572.0955719947815,
+    "values": [
+      6516.429149001837,
+      6572.0955719947815,
+      6313.084842026234
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 3536.4330739974976,
+    "minimum": 3480.8125360012054,
+    "maximum": 3620.0609970092773,
+    "values": [
+      3480.8125360012054,
+      3620.0609970092773,
+      3536.4330739974976
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 7930.601071000099,
+    "minimum": 7820.620840013027,
+    "maximum": 8042.779648005962,
+    "values": [
+      8042.779648005962,
+      7930.601071000099,
+      7820.620840013027
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 30745.9213629961,
+    "minimum": 29498.015902012587,
+    "maximum": 31785.704324007034,
+    "values": [
+      29498.015902012587,
+      30745.9213629961,
+      31785.704324007034
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5892.509110987186,
+    "minimum": 5877.640379995108,
+    "maximum": 6140.7721500098705,
+    "values": [
+      6140.7721500098705,
+      5877.640379995108,
+      5892.509110987186
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 1118.920538008213,
+    "minimum": 1106.1410380005836,
+    "maximum": 1137.6159999966621,
+    "values": [
+      1137.6159999966621,
+      1106.1410380005836,
+      1118.920538008213
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 6861.66530200839,
+    "minimum": 6401.884380012751,
+    "maximum": 7639.461147993803,
+    "values": [
+      7639.461147993803,
+      6861.66530200839,
+      6401.884380012751
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 4555.313496977091,
+    "minimum": 4536.377765983343,
+    "maximum": 4624.836726993322,
+    "values": [
+      4624.836726993322,
+      4555.313496977091,
+      4536.377765983343
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5871.163996011019,
+    "minimum": 5706.05818900466,
+    "maximum": 6316.533533990383,
+    "values": [
+      6316.533533990383,
+      5871.163996011019,
+      5706.05818900466
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 960.5645000040531,
+    "minimum": 901.637806981802,
+    "maximum": 993.0503070056438,
+    "values": [
+      960.5645000040531,
+      993.0503070056438,
+      901.637806981802
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 9248.414915978909,
+    "minimum": 8969.53072398901,
+    "maximum": 9423.023916989565,
+    "values": [
+      8969.53072398901,
+      9248.414915978909,
+      9423.023916989565
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 352.87487494945526,
+    "minimum": 341.6166669726372,
+    "maximum": 374.25633305311203,
+    "values": [
+      341.6166669726372,
+      352.87487494945526,
+      374.25633305311203
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 2096.0137079954147,
+    "minimum": 2075.1597080230713,
+    "maximum": 2099.7814579606056,
+    "values": [
+      2099.7814579606056,
+      2096.0137079954147,
+      2075.1597080230713
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 281.8875409960747,
+    "minimum": 268.4582499861717,
+    "maximum": 298.4542499780655,
+    "values": [
+      268.4582499861717,
+      281.8875409960747,
+      298.4542499780655
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 104.88679200410843,
+    "minimum": 103.9289579987526,
+    "maximum": 112.689208984375,
+    "values": [
+      104.88679200410843,
+      103.9289579987526,
+      112.689208984375
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 300.4896669983864,
+    "minimum": 276.3587089776993,
+    "maximum": 318.75208300352097,
+    "values": [
+      300.4896669983864,
+      318.75208300352097,
+      276.3587089776993
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 1252.8834159970284,
+    "minimum": 1249.384249985218,
+    "maximum": 1270.3189579844475,
+    "values": [
+      1270.3189579844475,
+      1249.384249985218,
+      1252.8834159970284
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 282.9352090358734,
+    "minimum": 262.7364159822464,
+    "maximum": 310.72129195928574,
+    "values": [
+      310.72129195928574,
+      262.7364159822464,
+      282.9352090358734
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 35.1708750128746,
+    "minimum": 21.402832984924316,
+    "maximum": 36.96716696023941,
+    "values": [
+      21.402832984924316,
+      35.1708750128746,
+      36.96716696023941
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 271.8625839948654,
+    "minimum": 268.04570895433426,
+    "maximum": 313.5211670398712,
+    "values": [
+      313.5211670398712,
+      271.8625839948654,
+      268.04570895433426
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 348.0527089834213,
+    "minimum": 343.05437499284744,
+    "maximum": 352.6880830526352,
+    "values": [
+      348.0527089834213,
+      343.05437499284744,
+      352.6880830526352
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 273.95929104089737,
+    "minimum": 261.81650000810623,
+    "maximum": 309.25479197502136,
+    "values": [
+      309.25479197502136,
+      273.95929104089737,
+      261.81650000810623
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 35.10774999856949,
+    "minimum": 15.836166977882385,
+    "maximum": 35.781458020210266,
+    "values": [
+      15.836166977882385,
+      35.10774999856949,
+      35.781458020210266
+    ]
+  },
+  {
+    "revision": "locked-d7c513c",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 438.2318339943886,
+    "minimum": 428.4663749933243,
+    "maximum": 451.13949996232986,
+    "values": [
+      451.13949996232986,
+      428.4663749933243,
+      438.2318339943886
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 9806.823184996843,
+    "minimum": 9163.609800994396,
+    "maximum": 10555.465608000755,
+    "values": [
+      9806.823184996843,
+      9163.609800994396,
+      10555.465608000755
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 2781.970458984375,
+    "minimum": 2742.097998023033,
+    "maximum": 3043.852035999298,
+    "values": [
+      2781.970458984375,
+      2742.097998023033,
+      3043.852035999298
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 10673.416568994522,
+    "minimum": 10398.881570011377,
+    "maximum": 11723.621068000793,
+    "values": [
+      10398.881570011377,
+      10673.416568994522,
+      11723.621068000793
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 4855.2588430047035,
+    "minimum": 4809.198420017958,
+    "maximum": 5116.86922699213,
+    "values": [
+      4855.2588430047035,
+      4809.198420017958,
+      5116.86922699213
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 2868.3618440032005,
+    "minimum": 2802.3956899940968,
+    "maximum": 3008.1424980163574,
+    "values": [
+      2868.3618440032005,
+      2802.3956899940968,
+      3008.1424980163574
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 1173.19934502244,
+    "minimum": 1117.4100370109081,
+    "maximum": 1182.3324609994888,
+    "values": [
+      1173.19934502244,
+      1182.3324609994888,
+      1117.4100370109081
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 125.24742299318314,
+    "minimum": 123.08930799365044,
+    "maximum": 131.1804619729519,
+    "values": [
+      123.08930799365044,
+      125.24742299318314,
+      131.1804619729519
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 197.7537690103054,
+    "minimum": 196.22034600377083,
+    "maximum": 206.661268979311,
+    "values": [
+      196.22034600377083,
+      206.661268979311,
+      197.7537690103054
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 33.75473099946976,
+    "minimum": 31.96365401148796,
+    "maximum": 48.40353798866272,
+    "values": [
+      31.96365401148796,
+      33.75473099946976,
+      48.40353798866272
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 4159.682266026735,
+    "minimum": 2797.2279210090637,
+    "maximum": 4188.512881010771,
+    "values": [
+      4159.682266026735,
+      4188.512881010771,
+      2797.2279210090637
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 1091.5884610116482,
+    "minimum": 1011.9555760025978,
+    "maximum": 1168.3816530108452,
+    "values": [
+      1168.3816530108452,
+      1091.5884610116482,
+      1011.9555760025978
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 4230.429689019918,
+    "minimum": 3472.86945900321,
+    "maximum": 4290.530149996281,
+    "values": [
+      4290.530149996281,
+      4230.429689019918,
+      3472.86945900321
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 1238.515230000019,
+    "minimum": 660.6619990170002,
+    "maximum": 1300.23996001482,
+    "values": [
+      1300.23996001482,
+      1238.515230000019,
+      660.6619990170002
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 1040.198960006237,
+    "minimum": 1035.5457299947739,
+    "maximum": 1081.4344219863415,
+    "values": [
+      1040.198960006237,
+      1035.5457299947739,
+      1081.4344219863415
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 970.1152300238609,
+    "minimum": 709.6677300035954,
+    "maximum": 1019.991267979145,
+    "values": [
+      709.6677300035954,
+      1019.991267979145,
+      970.1152300238609
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 34.346500009298325,
+    "minimum": 34.13096100091934,
+    "maximum": 43.36169299483299,
+    "values": [
+      34.13096100091934,
+      43.36169299483299,
+      34.346500009298325
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 39.064076989889145,
+    "minimum": 35.016346007585526,
+    "maximum": 46.55415400862694,
+    "values": [
+      39.064076989889145,
+      46.55415400862694,
+      35.016346007585526
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 36.30315300822258,
+    "minimum": 30.319691985845566,
+    "maximum": 37.237306982278824,
+    "values": [
+      36.30315300822258,
+      37.237306982278824,
+      30.319691985845566
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 3424.983190000057,
+    "minimum": 2515.574959009886,
+    "maximum": 3445.576420992613,
+    "values": [
+      3424.983190000057,
+      3445.576420992613,
+      2515.574959009886
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 1072.689614981413,
+    "minimum": 640.4606150090694,
+    "maximum": 1208.7668460011482,
+    "values": [
+      1208.7668460011482,
+      1072.689614981413,
+      640.4606150090694
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 1156.8328069746494,
+    "minimum": 1144.1022680103779,
+    "maximum": 1203.7776139974594,
+    "values": [
+      1203.7776139974594,
+      1144.1022680103779,
+      1156.8328069746494
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-hosts-250-checksum",
+    "samples": 3,
+    "median": 2815.698228985071,
+    "minimum": 2608.384074985981,
+    "maximum": 2941.7461510002613,
+    "values": [
+      2815.698228985071,
+      2941.7461510002613,
+      2608.384074985981
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 1168.3471139967442,
+    "minimum": 578.241769015789,
+    "maximum": 1241.090152978897,
+    "values": [
+      1168.3471139967442,
+      1241.090152978897,
+      578.241769015789
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 938.9004989862442,
+    "minimum": 348.9933460056782,
+    "maximum": 986.40761500597,
+    "values": [
+      986.40761500597,
+      938.9004989862442,
+      348.9933460056782
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 1021.6808839738369,
+    "minimum": 473.3555379807949,
+    "maximum": 1102.8645759820938,
+    "values": [
+      1102.8645759820938,
+      1021.6808839738369,
+      473.3555379807949
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 27.635729998350143,
+    "minimum": 27.162923008203506,
+    "maximum": 32.94215300679207,
+    "values": [
+      27.162923008203506,
+      32.94215300679207,
+      27.635729998350143
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 29.08534601330757,
+    "minimum": 28.070807993412018,
+    "maximum": 31.397691994905472,
+    "values": [
+      29.08534601330757,
+      31.397691994905472,
+      28.070807993412018
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 10015.732801020145,
+    "minimum": 10014.248377978802,
+    "maximum": 10107.068376988173,
+    "values": [
+      10107.068376988173,
+      10014.248377978802,
+      10015.732801020145
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 41032.13216301799,
+    "minimum": 40417.82747101784,
+    "maximum": 41071.61570098996,
+    "values": [
+      40417.82747101784,
+      41071.61570098996,
+      41032.13216301799
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 6031.238071978092,
+    "minimum": 6011.333458006382,
+    "maximum": 6615.29668700695,
+    "values": [
+      6615.29668700695,
+      6011.333458006382,
+      6031.238071978092
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 3109.800536006689,
+    "minimum": 3090.8410360217094,
+    "maximum": 3333.604304999113,
+    "values": [
+      3333.604304999113,
+      3109.800536006689,
+      3090.8410360217094
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 7951.580917000771,
+    "minimum": 7927.754763990641,
+    "maximum": 7997.9044170081615,
+    "values": [
+      7951.580917000771,
+      7997.9044170081615,
+      7927.754763990641
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 16636.11764201522,
+    "minimum": 15875.641488999128,
+    "maximum": 16683.13810300827,
+    "values": [
+      15875.641488999128,
+      16636.11764201522,
+      16683.13810300827
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5860.680957019329,
+    "minimum": 5655.060225993395,
+    "maximum": 6022.730226993561,
+    "values": [
+      5655.060225993395,
+      5860.680957019329,
+      6022.730226993561
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 961.6850380003452,
+    "minimum": 954.0407299995422,
+    "maximum": 999.7598069906235,
+    "values": [
+      961.6850380003452,
+      954.0407299995422,
+      999.7598069906235
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 6145.319071978331,
+    "minimum": 5949.1103419959545,
+    "maximum": 6208.142534017563,
+    "values": [
+      6208.142534017563,
+      5949.1103419959545,
+      6145.319071978331
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 4555.049805015326,
+    "minimum": 4532.980572998524,
+    "maximum": 4572.50080499053,
+    "values": [
+      4555.049805015326,
+      4532.980572998524,
+      4572.50080499053
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5880.721188008785,
+    "minimum": 5506.132804006338,
+    "maximum": 5945.037496000528,
+    "values": [
+      5945.037496000528,
+      5506.132804006338,
+      5880.721188008785
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 1099.3491910099983,
+    "minimum": 1076.1087299883366,
+    "maximum": 1189.7534230053425,
+    "values": [
+      1076.1087299883366,
+      1189.7534230053425,
+      1099.3491910099983
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 8893.863416999578,
+    "minimum": 8654.982071012259,
+    "maximum": 9073.736186027527,
+    "values": [
+      8654.982071012259,
+      8893.863416999578,
+      9073.736186027527
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 1043.730541974306,
+    "minimum": 1040.2376660108566,
+    "maximum": 1049.5323750078678,
+    "values": [
+      1049.5323750078678,
+      1043.730541974306,
+      1040.2376660108566
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 155.3585000038147,
+    "minimum": 154.3352920114994,
+    "maximum": 155.40316700935364,
+    "values": [
+      155.40316700935364,
+      155.3585000038147,
+      154.3352920114994
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 1062.4472909867764,
+    "minimum": 1059.2486670017242,
+    "maximum": 1065.358209013939,
+    "values": [
+      1062.4472909867764,
+      1065.358209013939,
+      1059.2486670017242
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 224.06825000047684,
+    "minimum": 223.32341700792313,
+    "maximum": 225.58445799350739,
+    "values": [
+      223.32341700792313,
+      224.06825000047684,
+      225.58445799350739
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 164.8551660180092,
+    "minimum": 163.7921669781208,
+    "maximum": 165.59133300185204,
+    "values": [
+      164.8551660180092,
+      165.59133300185204,
+      163.7921669781208
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 96.55179101228714,
+    "minimum": 94.2817910015583,
+    "maximum": 98.67212501168251,
+    "values": [
+      98.67212501168251,
+      94.2817910015583,
+      96.55179101228714
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 63.78516599535942,
+    "minimum": 62.79925000667572,
+    "maximum": 64.81812500953674,
+    "values": [
+      63.78516599535942,
+      62.79925000667572,
+      64.81812500953674
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 89.2737919986248,
+    "minimum": 88.17291700839996,
+    "maximum": 89.44337499141693,
+    "values": [
+      89.44337499141693,
+      88.17291700839996,
+      89.2737919986248
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 13.473291993141174,
+    "minimum": 6.860790997743607,
+    "maximum": 14.333499997854233,
+    "values": [
+      6.860790997743607,
+      14.333499997854233,
+      13.473291993141174
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 282.9201659858227,
+    "minimum": 281.84345799684525,
+    "maximum": 285.49487498402596,
+    "values": [
+      285.49487498402596,
+      282.9201659858227,
+      281.84345799684525
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 66.30683398246765,
+    "minimum": 66.05016601085663,
+    "maximum": 67.95258301496506,
+    "values": [
+      66.30683398246765,
+      67.95258301496506,
+      66.05016601085663
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 282.4720420241356,
+    "minimum": 281.75891700387,
+    "maximum": 283.9856660068035,
+    "values": [
+      281.75891700387,
+      283.9856660068035,
+      282.4720420241356
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 71.79412499070168,
+    "minimum": 71.64370799064636,
+    "maximum": 74.15708401799202,
+    "values": [
+      71.79412499070168,
+      74.15708401799202,
+      71.64370799064636
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 70.54970899224281,
+    "minimum": 67.5256669819355,
+    "maximum": 70.985749989748,
+    "values": [
+      67.5256669819355,
+      70.985749989748,
+      70.54970899224281
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 63.611625015735626,
+    "minimum": 62.8194580078125,
+    "maximum": 64.94833400845528,
+    "values": [
+      63.611625015735626,
+      64.94833400845528,
+      62.8194580078125
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 15.273249983787537,
+    "minimum": 13.673833012580872,
+    "maximum": 18.335458010435104,
+    "values": [
+      13.673833012580872,
+      18.335458010435104,
+      15.273249983787537
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 22.311084002256393,
+    "minimum": 21.9375,
+    "maximum": 23.26637500524521,
+    "values": [
+      23.26637500524521,
+      21.9375,
+      22.311084002256393
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 13.13062497973442,
+    "minimum": 12.68554100394249,
+    "maximum": 14.24737498164177,
+    "values": [
+      14.24737498164177,
+      13.13062497973442,
+      12.68554100394249
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 249.890625,
+    "minimum": 249.83233401179314,
+    "maximum": 250.63829100131989,
+    "values": [
+      250.63829100131989,
+      249.83233401179314,
+      249.890625
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 57.367832988500595,
+    "minimum": 55.197332978248596,
+    "maximum": 58.23579201102257,
+    "values": [
+      55.197332978248596,
+      58.23579201102257,
+      57.367832988500595
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 160.2282919883728,
+    "minimum": 159.43379199504852,
+    "maximum": 162.57316699624062,
+    "values": [
+      159.43379199504852,
+      160.2282919883728,
+      162.57316699624062
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-hosts-250-checksum",
+    "samples": 3,
+    "median": 234.21137499809265,
+    "minimum": 233.323832988739,
+    "maximum": 235.66295799613,
+    "values": [
+      233.323832988739,
+      234.21137499809265,
+      235.66295799613
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 58.883457988500595,
+    "minimum": 58.02758398652077,
+    "maximum": 60.2155000269413,
+    "values": [
+      60.2155000269413,
+      58.883457988500595,
+      58.02758398652077
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 54.968457996845245,
+    "minimum": 54.70304200053215,
+    "maximum": 55.388958007097244,
+    "values": [
+      54.70304200053215,
+      54.968457996845245,
+      55.388958007097244
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 46.493166983127594,
+    "minimum": 45.74050000309944,
+    "maximum": 53.40820902585983,
+    "values": [
+      53.40820902585983,
+      45.74050000309944,
+      46.493166983127594
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 14.218708008527756,
+    "minimum": 14.188250005245209,
+    "maximum": 16.991125017404556,
+    "values": [
+      14.188250005245209,
+      16.991125017404556,
+      14.218708008527756
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 16.67095798254013,
+    "minimum": 16.330291002988815,
+    "maximum": 16.701999992132187,
+    "values": [
+      16.330291002988815,
+      16.701999992132187,
+      16.67095798254013
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 904.8867080211639,
+    "minimum": 902.054957985878,
+    "maximum": 907.0360830128193,
+    "values": [
+      902.054957985878,
+      904.8867080211639,
+      907.0360830128193
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 4129.531749993563,
+    "minimum": 4126.879667013884,
+    "maximum": 4129.889916986227,
+    "values": [
+      4129.531749993563,
+      4129.889916986227,
+      4126.879667013884
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 829.2808330059052,
+    "minimum": 828.1829589903355,
+    "maximum": 830.2445829808712,
+    "values": [
+      829.2808330059052,
+      828.1829589903355,
+      830.2445829808712
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 165.8056669831276,
+    "minimum": 164.46633300185204,
+    "maximum": 166.8733749985695,
+    "values": [
+      166.8733749985695,
+      164.46633300185204,
+      165.8056669831276
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 868.0615830123425,
+    "minimum": 854.6972500085831,
+    "maximum": 942.3835829794407,
+    "values": [
+      942.3835829794407,
+      868.0615830123425,
+      854.6972500085831
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 990.5362499952316,
+    "minimum": 984.3521249890327,
+    "maximum": 991.6841659843922,
+    "values": [
+      991.6841659843922,
+      990.5362499952316,
+      984.3521249890327
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 884.7965419888496,
+    "minimum": 883.7199999988079,
+    "maximum": 914.7644999921322,
+    "values": [
+      883.7199999988079,
+      884.7965419888496,
+      914.7644999921322
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 58.118250012397766,
+    "minimum": 57.30162501335144,
+    "maximum": 59.93133297562599,
+    "values": [
+      59.93133297562599,
+      57.30162501335144,
+      58.118250012397766
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 911.1949169933796,
+    "minimum": 846.9875840246677,
+    "maximum": 932.6494170129299,
+    "values": [
+      846.9875840246677,
+      932.6494170129299,
+      911.1949169933796
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 504.6862089931965,
+    "minimum": 503.308209002018,
+    "maximum": 505.34716698527336,
+    "values": [
+      503.308209002018,
+      505.34716698527336,
+      504.6862089931965
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 897.2680830061436,
+    "minimum": 890.7913330197334,
+    "maximum": 902.9471669793129,
+    "values": [
+      897.2680830061436,
+      902.9471669793129,
+      890.7913330197334
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 57.68220800161362,
+    "minimum": 54.56358301639557,
+    "maximum": 62.96695801615715,
+    "values": [
+      54.56358301639557,
+      62.96695801615715,
+      57.68220800161362
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 605.903833001852,
+    "minimum": 603.5888330042362,
+    "maximum": 607.0575419962406,
+    "values": [
+      603.5888330042362,
+      607.0575419962406,
+      605.903833001852
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 342.85895800590515,
+    "minimum": 335.2232920527458,
+    "maximum": 353.8195829987526,
+    "values": [
+      353.8195829987526,
+      342.85895800590515,
+      335.2232920527458
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 2047.3816249966621,
+    "minimum": 2045.713416993618,
+    "maximum": 2051.9514169692993,
+    "values": [
+      2051.9514169692993,
+      2047.3816249966621,
+      2045.713416993618
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 282.1176670193672,
+    "minimum": 275.339457988739,
+    "maximum": 321.1246249675751,
+    "values": [
+      275.339457988739,
+      321.1246249675751,
+      282.1176670193672
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 86.56625002622604,
+    "minimum": 81.47812503576279,
+    "maximum": 106.49991703033447,
+    "values": [
+      81.47812503576279,
+      86.56625002622604,
+      106.49991703033447
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 286.0632500052452,
+    "minimum": 267.3929170370102,
+    "maximum": 289.27137500047684,
+    "values": [
+      267.3929170370102,
+      289.27137500047684,
+      286.0632500052452
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 681.1214169859886,
+    "minimum": 672.9220840334892,
+    "maximum": 693.0519170165062,
+    "values": [
+      693.0519170165062,
+      681.1214169859886,
+      672.9220840334892
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 261.2513750195503,
+    "minimum": 260.560957968235,
+    "maximum": 265.7463750243187,
+    "values": [
+      265.7463750243187,
+      261.2513750195503,
+      260.560957968235
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 36.50566601753235,
+    "minimum": 35.85566699504852,
+    "maximum": 37.424207985401154,
+    "values": [
+      36.50566601753235,
+      37.424207985401154,
+      35.85566699504852
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 287.19204103946686,
+    "minimum": 276.50116604566574,
+    "maximum": 288.2965840101242,
+    "values": [
+      288.2965840101242,
+      287.19204103946686,
+      276.50116604566574
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 342.72045797109604,
+    "minimum": 334.7509999871254,
+    "maximum": 351.89941704273224,
+    "values": [
+      351.89941704273224,
+      342.72045797109604,
+      334.7509999871254
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 282.2847499847412,
+    "minimum": 271.7543330192566,
+    "maximum": 288.971499979496,
+    "values": [
+      288.971499979496,
+      282.2847499847412,
+      271.7543330192566
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 36.33399999141693,
+    "minimum": 35.88695800304413,
+    "maximum": 38.932708978652954,
+    "values": [
+      35.88695800304413,
+      38.932708978652954,
+      36.33399999141693
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 442.6546249985695,
+    "minimum": 439.7032080292702,
+    "maximum": 447.56008303165436,
+    "values": [
+      447.56008303165436,
+      442.6546249985695,
+      439.7032080292702
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 11629.149338006973,
+    "minimum": 11520.521569013596,
+    "maximum": 11655.94868400693,
+    "values": [
+      11655.94868400693,
+      11520.521569013596,
+      11629.149338006973
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 3312.2584600150585,
+    "minimum": 3304.6790740191936,
+    "maximum": 3348.496959000826,
+    "values": [
+      3312.2584600150585,
+      3304.6790740191936,
+      3348.496959000826
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 12233.479838013649,
+    "minimum": 12112.855415016413,
+    "maximum": 12533.656067997217,
+    "values": [
+      12112.855415016413,
+      12233.479838013649,
+      12533.656067997217
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 5422.792457997799,
+    "minimum": 5403.793765991926,
+    "maximum": 5516.299111008644,
+    "values": [
+      5422.792457997799,
+      5403.793765991926,
+      5516.299111008644
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 3286.690881997347,
+    "minimum": 3204.836575001478,
+    "maximum": 3362.0426519811153,
+    "values": [
+      3204.836575001478,
+      3362.0426519811153,
+      3286.690881997347
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 1260.1616530120373,
+    "minimum": 1156.991346001625,
+    "maximum": 1267.9350759983063,
+    "values": [
+      1267.9350759983063,
+      1260.1616530120373,
+      1156.991346001625
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 132.02842301130295,
+    "minimum": 124.00423097610474,
+    "maximum": 136.79307702183723,
+    "values": [
+      124.00423097610474,
+      132.02842301130295,
+      136.79307702183723
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 207.18000000715256,
+    "minimum": 202.1023079752922,
+    "maximum": 210.3733069896698,
+    "values": [
+      210.3733069896698,
+      207.18000000715256,
+      202.1023079752922
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 50.57788500189781,
+    "minimum": 47.93299999833107,
+    "maximum": 52.026538997888565,
+    "values": [
+      47.93299999833107,
+      50.57788500189781,
+      52.026538997888565
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 4720.20488101244,
+    "minimum": 4718.384651005268,
+    "maximum": 4726.968728005886,
+    "values": [
+      4720.20488101244,
+      4718.384651005268,
+      4726.968728005886
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 1324.1187680065632,
+    "minimum": 1304.265922009945,
+    "maximum": 1402.4456529915333,
+    "values": [
+      1324.1187680065632,
+      1304.265922009945,
+      1402.4456529915333
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 4776.794534981251,
+    "minimum": 4752.128305017948,
+    "maximum": 4841.6558040082455,
+    "values": [
+      4841.6558040082455,
+      4776.794534981251,
+      4752.128305017948
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 1501.3783060014248,
+    "minimum": 1481.0145370066166,
+    "maximum": 1513.2727679908276,
+    "values": [
+      1481.0145370066166,
+      1501.3783060014248,
+      1513.2727679908276
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 1277.1974999904633,
+    "minimum": 1147.8963829874992,
+    "maximum": 1286.9271140098572,
+    "values": [
+      1277.1974999904633,
+      1286.9271140098572,
+      1147.8963829874992
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 1031.987845003605,
+    "minimum": 931.716422021389,
+    "maximum": 1034.0118069946766,
+    "values": [
+      1034.0118069946766,
+      931.716422021389,
+      1031.987845003605
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 35.25692301988602,
+    "minimum": 35.03888499736786,
+    "maximum": 38.49334600567818,
+    "values": [
+      35.03888499736786,
+      38.49334600567818,
+      35.25692301988602
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 52.82176899909973,
+    "minimum": 46.43657699227333,
+    "maximum": 59.708154022693634,
+    "values": [
+      46.43657699227333,
+      52.82176899909973,
+      59.708154022693634
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 42.6358460187912,
+    "minimum": 42.58769300580025,
+    "maximum": 49.39826899766922,
+    "values": [
+      42.58769300580025,
+      49.39826899766922,
+      42.6358460187912
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 4082.0747279822826,
+    "minimum": 3999.3166509866714,
+    "maximum": 4116.415381997824,
+    "values": [
+      3999.3166509866714,
+      4116.415381997824,
+      4082.0747279822826
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 1183.9243069887161,
+    "minimum": 1128.0595380067825,
+    "maximum": 1255.274230003357,
+    "values": [
+      1183.9243069887161,
+      1128.0595380067825,
+      1255.274230003357
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 1448.483267992735,
+    "minimum": 1427.2138449847698,
+    "maximum": 1530.2176530063152,
+    "values": [
+      1427.2138449847698,
+      1448.483267992735,
+      1530.2176530063152
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-hosts-250-checksum",
+    "samples": 3,
+    "median": 3045.5693820118904,
+    "minimum": 2957.5711129903793,
+    "maximum": 3143.134189993143,
+    "values": [
+      3143.134189993143,
+      3045.5693820118904,
+      2957.5711129903793
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 1210.651152998209,
+    "minimum": 1208.702998995781,
+    "maximum": 1280.06242197752,
+    "values": [
+      1208.702998995781,
+      1280.06242197752,
+      1210.651152998209
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 984.6239610016346,
+    "minimum": 973.52623000741,
+    "maximum": 1230.4473069906235,
+    "values": [
+      984.6239610016346,
+      973.52623000741,
+      1230.4473069906235
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 941.605654001236,
+    "minimum": 657.6202300190926,
+    "maximum": 990.4445759952068,
+    "values": [
+      941.605654001236,
+      657.6202300190926,
+      990.4445759952068
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 39.13188397884369,
+    "minimum": 37.17811498045921,
+    "maximum": 41.87253800034523,
+    "values": [
+      41.87253800034523,
+      37.17811498045921,
+      39.13188397884369
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 35.21680700778961,
+    "minimum": 33.781807988882065,
+    "maximum": 39.8306539952755,
+    "values": [
+      35.21680700778961,
+      33.781807988882065,
+      39.8306539952755
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 10319.544954001904,
+    "minimum": 10005.97083902359,
+    "maximum": 10512.702991992235,
+    "values": [
+      10512.702991992235,
+      10005.97083902359,
+      10319.544954001904
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 48176.14073500037,
+    "minimum": 46899.19373598695,
+    "maximum": 48447.501657009125,
+    "values": [
+      48447.501657009125,
+      46899.19373598695,
+      48176.14073500037
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 6398.746533989906,
+    "minimum": 6319.667304009199,
+    "maximum": 6749.9770720005035,
+    "values": [
+      6319.667304009199,
+      6398.746533989906,
+      6749.9770720005035
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 3420.9783050119877,
+    "minimum": 3328.4180739820004,
+    "maximum": 3522.7071129977703,
+    "values": [
+      3522.7071129977703,
+      3420.9783050119877,
+      3328.4180739820004
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 8414.384378999472,
+    "minimum": 8381.934917002916,
+    "maximum": 8562.705377995968,
+    "values": [
+      8381.934917002916,
+      8414.384378999472,
+      8562.705377995968
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 18517.10837098956,
+    "minimum": 18079.28194898367,
+    "maximum": 18869.45517900586,
+    "values": [
+      18079.28194898367,
+      18517.10837098956,
+      18869.45517900586
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 6812.4944179952145,
+    "minimum": 6417.048379987478,
+    "maximum": 6880.944225013256,
+    "values": [
+      6417.048379987478,
+      6812.4944179952145,
+      6880.944225013256
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 1177.8600760102272,
+    "minimum": 1171.1864610016346,
+    "maximum": 1230.502615004778,
+    "values": [
+      1177.8600760102272,
+      1230.502615004778,
+      1171.1864610016346
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 6768.422110021114,
+    "minimum": 6447.9448420107365,
+    "maximum": 7457.615263998508,
+    "values": [
+      7457.615263998508,
+      6768.422110021114,
+      6447.9448420107365
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 4842.704034984112,
+    "minimum": 4714.7735739946365,
+    "maximum": 5624.205841988325,
+    "values": [
+      4842.704034984112,
+      5624.205841988325,
+      4714.7735739946365
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5855.296687990427,
+    "minimum": 5787.614687979221,
+    "maximum": 6328.51553401351,
+    "values": [
+      6328.51553401351,
+      5787.614687979221,
+      5855.296687990427
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 1047.1074990034103,
+    "minimum": 903.772036999464,
+    "maximum": 1110.4391530156136,
+    "values": [
+      903.772036999464,
+      1110.4391530156136,
+      1047.1074990034103
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 9319.563955008984,
+    "minimum": 8988.47445499897,
+    "maximum": 9468.94487798214,
+    "values": [
+      8988.47445499897,
+      9319.563955008984,
+      9468.94487798214
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 1043.0486249923706,
+    "minimum": 1042.877624988556,
+    "maximum": 1044.534375011921,
+    "values": [
+      1042.877624988556,
+      1043.0486249923706,
+      1044.534375011921
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 153.79025000333786,
+    "minimum": 152.87679201364517,
+    "maximum": 154.75545799732208,
+    "values": [
+      152.87679201364517,
+      154.75545799732208,
+      153.79025000333786
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 1060.1137500107288,
+    "minimum": 1059.6892499923706,
+    "maximum": 1062.30358299613,
+    "values": [
+      1059.6892499923706,
+      1062.30358299613,
+      1060.1137500107288
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 223.61950001120567,
+    "minimum": 222.90879198908806,
+    "maximum": 223.71254101395607,
+    "values": [
+      223.71254101395607,
+      223.61950001120567,
+      222.90879198908806
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 162.18958297371864,
+    "minimum": 161.5999169945717,
+    "maximum": 162.32554200291634,
+    "values": [
+      161.5999169945717,
+      162.18958297371864,
+      162.32554200291634
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 95.38687500357628,
+    "minimum": 94.70254200696945,
+    "maximum": 96.81179198622704,
+    "values": [
+      94.70254200696945,
+      95.38687500357628,
+      96.81179198622704
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 64.16041702032089,
+    "minimum": 61.44487500190735,
+    "maximum": 65.42154198884964,
+    "values": [
+      61.44487500190735,
+      64.16041702032089,
+      65.42154198884964
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 88.72500002384186,
+    "minimum": 88.60766699910164,
+    "maximum": 89.20366698503494,
+    "values": [
+      88.60766699910164,
+      88.72500002384186,
+      89.20366698503494
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 13.581874996423721,
+    "minimum": 13.560874998569489,
+    "maximum": 14.990290999412537,
+    "values": [
+      13.581874996423721,
+      13.560874998569489,
+      14.990290999412537
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 245.224417001009,
+    "minimum": 245.03549998998642,
+    "maximum": 245.80462497472763,
+    "values": [
+      245.80462497472763,
+      245.224417001009,
+      245.03549998998642
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 67.86333301663399,
+    "minimum": 65.74379199743271,
+    "maximum": 69.0074169933796,
+    "values": [
+      69.0074169933796,
+      67.86333301663399,
+      65.74379199743271
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 248.1891250014305,
+    "minimum": 245.99841597676277,
+    "maximum": 250.97162500023842,
+    "values": [
+      245.99841597676277,
+      250.97162500023842,
+      248.1891250014305
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 71.11537501215935,
+    "minimum": 70.88754200935364,
+    "maximum": 75.5860829949379,
+    "values": [
+      71.11537501215935,
+      70.88754200935364,
+      75.5860829949379
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 67.90129101276398,
+    "minimum": 65.5164999961853,
+    "maximum": 68.43970900774002,
+    "values": [
+      67.90129101276398,
+      65.5164999961853,
+      68.43970900774002
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 61.46525001525879,
+    "minimum": 60.64183300733566,
+    "maximum": 63.09783300757408,
+    "values": [
+      60.64183300733566,
+      63.09783300757408,
+      61.46525001525879
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 14.076625019311905,
+    "minimum": 13.410957992076874,
+    "maximum": 17.655000001192093,
+    "values": [
+      13.410957992076874,
+      17.655000001192093,
+      14.076625019311905
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 24.357708007097244,
+    "minimum": 16.421416997909546,
+    "maximum": 24.76995798945427,
+    "values": [
+      16.421416997909546,
+      24.357708007097244,
+      24.76995798945427
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 14.527500003576279,
+    "minimum": 13.658375024795532,
+    "maximum": 14.558750003576279,
+    "values": [
+      14.527500003576279,
+      14.558750003576279,
+      13.658375024795532
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 247.84437501430511,
+    "minimum": 231.61666598916054,
+    "maximum": 251.62158301472664,
+    "values": [
+      251.62158301472664,
+      231.61666598916054,
+      247.84437501430511
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 57.510375022888184,
+    "minimum": 56.33479201793671,
+    "maximum": 57.97612500190735,
+    "values": [
+      56.33479201793671,
+      57.510375022888184,
+      57.97612500190735
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 162.01025000214577,
+    "minimum": 159.9272920191288,
+    "maximum": 164.673249989748,
+    "values": [
+      159.9272920191288,
+      164.673249989748,
+      162.01025000214577
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-hosts-250-checksum",
+    "samples": 3,
+    "median": 233.50158298015594,
+    "minimum": 233.1408749818802,
+    "maximum": 233.5256669819355,
+    "values": [
+      233.1408749818802,
+      233.50158298015594,
+      233.5256669819355
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 56.52995800971985,
+    "minimum": 55.43691700696945,
+    "maximum": 59.34791699051857,
+    "values": [
+      56.52995800971985,
+      55.43691700696945,
+      59.34791699051857
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 53.70866698026657,
+    "minimum": 52.53516599535942,
+    "maximum": 56.17762500047684,
+    "values": [
+      56.17762500047684,
+      53.70866698026657,
+      52.53516599535942
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 47.287916004657745,
+    "minimum": 44.982792019844055,
+    "maximum": 47.32508400082588,
+    "values": [
+      47.287916004657745,
+      44.982792019844055,
+      47.32508400082588
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-sync-1000",
+    "samples": 3,
+    "median": 14.259416997432709,
+    "minimum": 14.000041007995605,
+    "maximum": 17.160625010728836,
+    "values": [
+      14.000041007995605,
+      14.259416997432709,
+      17.160625010728836
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 16.830624997615814,
+    "minimum": 16.15216699242592,
+    "maximum": 18.835457980632782,
+    "values": [
+      18.835457980632782,
+      16.15216699242592,
+      16.830624997615814
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 907.8488340079784,
+    "minimum": 906.160000026226,
+    "maximum": 909.6929579973221,
+    "values": [
+      909.6929579973221,
+      906.160000026226,
+      907.8488340079784
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 4119.56329202652,
+    "minimum": 4113.303957998753,
+    "maximum": 4120.652375012636,
+    "values": [
+      4119.56329202652,
+      4120.652375012636,
+      4113.303957998753
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 835.0141659975052,
+    "minimum": 833.5358330011368,
+    "maximum": 838.2490000128746,
+    "values": [
+      835.0141659975052,
+      838.2490000128746,
+      833.5358330011368
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 165.98575001955032,
+    "minimum": 165.1727499961853,
+    "maximum": 169.82020899653435,
+    "values": [
+      165.98575001955032,
+      165.1727499961853,
+      169.82020899653435
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 876.3964169919491,
+    "minimum": 839.7553749978542,
+    "maximum": 893.7427499890327,
+    "values": [
+      893.7427499890327,
+      876.3964169919491,
+      839.7553749978542
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 840.7556250095367,
+    "minimum": 838.7538340091705,
+    "maximum": 842.5742499828339,
+    "values": [
+      842.5742499828339,
+      840.7556250095367,
+      838.7538340091705
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 881.8445830047131,
+    "minimum": 879.1121250092983,
+    "maximum": 898.3979159891605,
+    "values": [
+      898.3979159891605,
+      879.1121250092983,
+      881.8445830047131
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 57.89875000715256,
+    "minimum": 57.7298329770565,
+    "maximum": 61.469125002622604,
+    "values": [
+      57.89875000715256,
+      61.469125002622604,
+      57.7298329770565
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 909.2660830020905,
+    "minimum": 858.899041980505,
+    "maximum": 914.626040995121,
+    "values": [
+      858.899041980505,
+      914.626040995121,
+      909.2660830020905
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 505.50104200839996,
+    "minimum": 504.9661659896374,
+    "maximum": 519.0776660144329,
+    "values": [
+      504.9661659896374,
+      519.0776660144329,
+      505.50104200839996
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 899.0099999904633,
+    "minimum": 894.0722090005875,
+    "maximum": 899.0686250030994,
+    "values": [
+      899.0686250030994,
+      894.0722090005875,
+      899.0099999904633
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 57.390958994627,
+    "minimum": 52.44249999523163,
+    "maximum": 58.33100000023842,
+    "values": [
+      52.44249999523163,
+      57.390958994627,
+      58.33100000023842
+    ]
+  },
+  {
+    "revision": "nitro-main-45f400c-op-18.2.5-modules-0.37.1",
+    "device": "iPhone 13 Pro",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 606.0163750052452,
+    "minimum": 605.5967909991741,
+    "maximum": 606.4384580254555,
+    "values": [
+      606.0163750052452,
+      605.5967909991741,
+      606.4384580254555
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 11458.756183981895,
+    "minimum": 11351.73353099823,
+    "maximum": 11570.619798988104,
+    "values": [
+      11570.619798988104,
+      11351.73353099823,
+      11458.756183981895
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 3359.8655359745026,
+    "minimum": 3354.1487289965153,
+    "maximum": 3398.1574209928513,
+    "values": [
+      3354.1487289965153,
+      3398.1574209928513,
+      3359.8655359745026
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 12409.842990994453,
+    "minimum": 12168.861914008856,
+    "maximum": 12525.710644990206,
+    "values": [
+      12525.710644990206,
+      12168.861914008856,
+      12409.842990994453
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 5518.378726989031,
+    "minimum": 5467.130881011486,
+    "maximum": 5579.39841902256,
+    "values": [
+      5467.130881011486,
+      5518.378726989031,
+      5579.39841902256
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 3286.2779589891434,
+    "minimum": 3175.865651011467,
+    "maximum": 3389.334612995386,
+    "values": [
+      3286.2779589891434,
+      3389.334612995386,
+      3175.865651011467
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 1252.4017679989338,
+    "minimum": 1228.944460004568,
+    "maximum": 1275.25907599926,
+    "values": [
+      1275.25907599926,
+      1252.4017679989338,
+      1228.944460004568
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 210.12007600069046,
+    "minimum": 194.2938850224018,
+    "maximum": 215.1964989900589,
+    "values": [
+      194.2938850224018,
+      210.12007600069046,
+      215.1964989900589
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 47.37896201014519,
+    "minimum": 44.72492301464081,
+    "maximum": 48.394654005765915,
+    "values": [
+      48.394654005765915,
+      47.37896201014519,
+      44.72492301464081
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 5151.031881004572,
+    "minimum": 5136.19449698925,
+    "maximum": 5172.910111993551,
+    "values": [
+      5172.910111993551,
+      5151.031881004572,
+      5136.19449698925
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 1452.7097290158272,
+    "minimum": 1373.8103060126305,
+    "maximum": 1506.5888060033321,
+    "values": [
+      1506.5888060033321,
+      1452.7097290158272,
+      1373.8103060126305
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 1302.4739989936352,
+    "minimum": 1256.660190999508,
+    "maximum": 1362.9384990036488,
+    "values": [
+      1256.660190999508,
+      1362.9384990036488,
+      1302.4739989936352
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 54.02538499236107,
+    "minimum": 42.36080801486969,
+    "maximum": 58.33849999308586,
+    "values": [
+      42.36080801486969,
+      58.33849999308586,
+      54.02538499236107
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 38.292923003435135,
+    "minimum": 34.57115399837494,
+    "maximum": 41.699154019355774,
+    "values": [
+      38.292923003435135,
+      34.57115399837494,
+      41.699154019355774
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 4163.696419984102,
+    "minimum": 3792.5089580118656,
+    "maximum": 4313.9223819971085,
+    "values": [
+      3792.5089580118656,
+      4313.9223819971085,
+      4163.696419984102
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 1247.5683830082417,
+    "minimum": 1003.916346013546,
+    "maximum": 1300.3393830060959,
+    "values": [
+      1300.3393830060959,
+      1247.5683830082417,
+      1003.916346013546
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 1292.3021530210972,
+    "minimum": 1228.4902690052986,
+    "maximum": 1407.034844994545,
+    "values": [
+      1292.3021530210972,
+      1407.034844994545,
+      1228.4902690052986
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-hosts-250-checksum",
+    "samples": 3,
+    "median": 3067.595535993576,
+    "minimum": 3037.76795899868,
+    "maximum": 3092.929883003235,
+    "values": [
+      3067.595535993576,
+      3092.929883003235,
+      3037.76795899868
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 1290.0276910066605,
+    "minimum": 1226.650806993246,
+    "maximum": 1350.918960005045,
+    "values": [
+      1350.918960005045,
+      1226.650806993246,
+      1290.0276910066605
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 1175.444038003683,
+    "minimum": 955.1793459951878,
+    "maximum": 1178.4539610147476,
+    "values": [
+      1175.444038003683,
+      1178.4539610147476,
+      955.1793459951878
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 807.7546530067921,
+    "minimum": 764.8173069953918,
+    "maximum": 856.3616139888763,
+    "values": [
+      807.7546530067921,
+      856.3616139888763,
+      764.8173069953918
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 33.27403798699379,
+    "minimum": 30.79126900434494,
+    "maximum": 42.491653978824615,
+    "values": [
+      30.79126900434494,
+      33.27403798699379,
+      42.491653978824615
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 9873.631224006414,
+    "minimum": 9794.188839018345,
+    "maximum": 10006.150338977575,
+    "values": [
+      10006.150338977575,
+      9794.188839018345,
+      9873.631224006414
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 48197.9822730124,
+    "minimum": 46961.91931301355,
+    "maximum": 49644.70284900069,
+    "values": [
+      48197.9822730124,
+      46961.91931301355,
+      49644.70284900069
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 6462.660072028637,
+    "minimum": 6383.649919003248,
+    "maximum": 6579.466571986675,
+    "values": [
+      6462.660072028637,
+      6579.466571986675,
+      6383.649919003248
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 3302.1296130120754,
+    "minimum": 3290.1202669739723,
+    "maximum": 3524.5054979920387,
+    "values": [
+      3524.5054979920387,
+      3290.1202669739723,
+      3302.1296130120754
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 8087.616109997034,
+    "minimum": 8015.649648994207,
+    "maximum": 8325.179839998484,
+    "values": [
+      8325.179839998484,
+      8087.616109997034,
+      8015.649648994207
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 20101.294793009758,
+    "minimum": 18835.541449010372,
+    "maximum": 20396.210408002138,
+    "values": [
+      18835.541449010372,
+      20101.294793009758,
+      20396.210408002138
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5814.281650006771,
+    "minimum": 5811.384957998991,
+    "maximum": 6613.520956993103,
+    "values": [
+      6613.520956993103,
+      5814.281650006771,
+      5811.384957998991
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 1121.0483839809895,
+    "minimum": 1091.7235769927502,
+    "maximum": 1211.8929989933968,
+    "values": [
+      1091.7235769927502,
+      1211.8929989933968,
+      1121.0483839809895
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 6359.417073011398,
+    "minimum": 6224.314303010702,
+    "maximum": 7019.447841018438,
+    "values": [
+      7019.447841018438,
+      6224.314303010702,
+      6359.417073011398
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 4631.317227005959,
+    "minimum": 4446.962035000324,
+    "maximum": 4850.845918983221,
+    "values": [
+      4631.317227005959,
+      4446.962035000324,
+      4850.845918983221
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 5812.445688009262,
+    "minimum": 5786.954649984837,
+    "maximum": 5837.154996007681,
+    "values": [
+      5812.445688009262,
+      5786.954649984837,
+      5837.154996007681
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 1098.5925370156765,
+    "minimum": 998.8681139945984,
+    "maximum": 1109.2149609923363,
+    "values": [
+      1109.2149609923363,
+      998.8681139945984,
+      1098.5925370156765
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "android",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 9222.750685989857,
+    "minimum": 9185.793994009495,
+    "maximum": 9411.026531994343,
+    "values": [
+      9185.793994009495,
+      9222.750685989857,
+      9411.026531994343
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 521.7918339967728,
+    "minimum": 510.7964999675751,
+    "maximum": 524.7367079854012,
+    "values": [
+      521.7918339967728,
+      524.7367079854012,
+      510.7964999675751
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 97.27945798635483,
+    "minimum": 96.50283300876617,
+    "maximum": 99.00633299350739,
+    "values": [
+      97.27945798635483,
+      99.00633299350739,
+      96.50283300876617
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 536.0088750123978,
+    "minimum": 526.8968330025673,
+    "maximum": 539.9846670031548,
+    "values": [
+      536.0088750123978,
+      539.9846670031548,
+      526.8968330025673
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 139.752749979496,
+    "minimum": 139.08625000715256,
+    "maximum": 140.15399998426437,
+    "values": [
+      140.15399998426437,
+      139.08625000715256,
+      139.752749979496
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 106.1660829782486,
+    "minimum": 105.68370896577835,
+    "maximum": 107.00525003671646,
+    "values": [
+      105.68370896577835,
+      107.00525003671646,
+      106.1660829782486
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 58.582834005355835,
+    "minimum": 58.039333045482635,
+    "maximum": 59.12145799398422,
+    "values": [
+      59.12145799398422,
+      58.582834005355835,
+      58.039333045482635
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "expo-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 39.629292011260986,
+    "minimum": 32.3299999833107,
+    "maximum": 40.33875000476837,
+    "values": [
+      32.3299999833107,
+      39.629292011260986,
+      40.33875000476837
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 5.4362499713897705,
+    "minimum": 5.381250023841858,
+    "maximum": 5.678957998752594,
+    "values": [
+      5.4362499713897705,
+      5.678957998752594,
+      5.381250023841858
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 196.11233299970627,
+    "minimum": 195.28216701745987,
+    "maximum": 201.3317499756813,
+    "values": [
+      195.28216701745987,
+      196.11233299970627,
+      201.3317499756813
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 45.561750054359436,
+    "minimum": 39.8418750166893,
+    "maximum": 45.76395899057388,
+    "values": [
+      45.76395899057388,
+      39.8418750166893,
+      45.561750054359436
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 40.54062497615814,
+    "minimum": 40.107332944869995,
+    "maximum": 41.08074998855591,
+    "values": [
+      41.08074998855591,
+      40.54062497615814,
+      40.107332944869995
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "nitro-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 8.141124963760376,
+    "minimum": 8.011665999889374,
+    "maximum": 8.154457986354828,
+    "values": [
+      8.141124963760376,
+      8.011665999889374,
+      8.154457986354828
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "batch-1000",
+    "samples": 3,
+    "median": 5.617541015148163,
+    "minimum": 5.506209015846252,
+    "maximum": 5.6262500286102295,
+    "values": [
+      5.6262500286102295,
+      5.617541015148163,
+      5.506209015846252
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-all-250-checksum",
+    "samples": 3,
+    "median": 166.8277090191841,
+    "minimum": 165.15583300590515,
+    "maximum": 168.6405410170555,
+    "values": [
+      166.8277090191841,
+      168.6405410170555,
+      165.15583300590515
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "prepared-point-1000-checksum",
+    "samples": 3,
+    "median": 34.39816600084305,
+    "minimum": 21.81366604566574,
+    "maximum": 34.969249963760376,
+    "values": [
+      34.39816600084305,
+      34.969249963760376,
+      21.81366604566574
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-all-250-checksum",
+    "samples": 3,
+    "median": 105.54162496328354,
+    "minimum": 84.2745829820633,
+    "maximum": 107.7109169960022,
+    "values": [
+      105.54162496328354,
+      107.7109169960022,
+      84.2745829820633
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-hosts-250-checksum",
+    "samples": 3,
+    "median": 158.99279195070267,
+    "minimum": 155.60095900297165,
+    "maximum": 162.59420895576477,
+    "values": [
+      162.59420895576477,
+      158.99279195070267,
+      155.60095900297165
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "select-point-1000-checksum",
+    "samples": 3,
+    "median": 37.929041028022766,
+    "minimum": 37.701542019844055,
+    "maximum": 39.62174999713898,
+    "values": [
+      37.929041028022766,
+      39.62174999713898,
+      37.701542019844055
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-async-1000",
+    "samples": 3,
+    "median": 35.20762503147125,
+    "minimum": 33.99995797872543,
+    "maximum": 36.321541011333466,
+    "values": [
+      33.99995797872543,
+      35.20762503147125,
+      36.321541011333466
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-prepared-async-1000",
+    "samples": 3,
+    "median": 27.93291598558426,
+    "minimum": 27.406332969665527,
+    "maximum": 28.63841700553894,
+    "values": [
+      28.63841700553894,
+      27.406332969665527,
+      27.93291598558426
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "diagnostic",
+    "library": "op-sqlite",
+    "test": "tx-sync-1000",
+    "samples": 3,
+    "median": 6.141624987125397,
+    "minimum": 5.884332954883575,
+    "maximum": 7.071291983127594,
+    "values": [
+      5.884332954883575,
+      6.141624987125397,
+      7.071291983127594
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 363.9558330178261,
+    "minimum": 333.9096670150757,
+    "maximum": 420.91804200410843,
+    "values": [
+      420.91804200410843,
+      363.9558330178261,
+      333.9096670150757
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 2096.623291015625,
+    "minimum": 2090.421333014965,
+    "maximum": 2167.3930419683456,
+    "values": [
+      2167.3930419683456,
+      2090.421333014965,
+      2096.623291015625
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 306.8570410013199,
+    "minimum": 275.12108302116394,
+    "maximum": 622.0562919974327,
+    "values": [
+      622.0562919974327,
+      306.8570410013199,
+      275.12108302116394
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "expo-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 106.73595803976059,
+    "minimum": 105.90245896577835,
+    "maximum": 110.22829103469849,
+    "values": [
+      110.22829103469849,
+      106.73595803976059,
+      105.90245896577835
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 306.3570829629898,
+    "minimum": 278.164332985878,
+    "maximum": 357.52008402347565,
+    "values": [
+      357.52008402347565,
+      306.3570829629898,
+      278.164332985878
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 745.7817499637604,
+    "minimum": 742.1266660094261,
+    "maximum": 759.5988330245018,
+    "values": [
+      759.5988330245018,
+      745.7817499637604,
+      742.1266660094261
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 260.15016704797745,
+    "minimum": 258.69550001621246,
+    "maximum": 310.3369579911232,
+    "values": [
+      310.3369579911232,
+      260.15016704797745,
+      258.69550001621246
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "nitro-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 34.60699999332428,
+    "minimum": 23.83458298444748,
+    "maximum": 36.3515830039978,
+    "values": [
+      34.60699999332428,
+      23.83458298444748,
+      36.3515830039978
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "async insert",
+    "samples": 3,
+    "median": 287.6944999694824,
+    "minimum": 267.20804101228714,
+    "maximum": 315.09941697120667,
+    "values": [
+      315.09941697120667,
+      287.6944999694824,
+      267.20804101228714
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 352.8030830025673,
+    "minimum": 350.20120799541473,
+    "maximum": 357.7810410261154,
+    "values": [
+      357.7810410261154,
+      352.8030830025673,
+      350.20120799541473
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "sync insert",
+    "samples": 3,
+    "median": 277.57204097509384,
+    "minimum": 263.6728330254555,
+    "maximum": 281.5966249704361,
+    "values": [
+      281.5966249704361,
+      277.57204097509384,
+      263.6728330254555
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite",
+    "test": "tx insert",
+    "samples": 3,
+    "median": 37.89733403921127,
+    "minimum": 35.136166036129,
+    "maximum": 37.97116595506668,
+    "values": [
+      35.136166036129,
+      37.89733403921127,
+      37.97116595506668
+    ]
+  },
+  {
+    "revision": "published-9.8.2",
+    "device": "ios",
+    "kind": "original",
+    "library": "op-sqlite (HostObjects)",
+    "test": "select + read props",
+    "samples": 3,
+    "median": 437.38566702604294,
+    "minimum": 424.93516701459885,
+    "maximum": 443.51241701841354,
+    "values": [
+      424.93516701459885,
+      443.51241701841354,
+      437.38566702604294
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "flow": "benchmark-launch",
+  "device": "00008110-001414E40CB9801E",
+  "executionPrerequisite": "",
+  "ok": false,
+  "passed": 0,
+  "failed": 0,
+  "skipped": 0,
+  "errored": 1,
+  "steps": [
+    {
+      "index": 0,
+      "kind": "launch",
+      "flow": "benchmark-launch",
+      "status": "error",
+      "reason": "the on-device XCUITest runner did not become ready for 00008110-001414E40CB9801E: [IosDeviceRunner:00008110-001414E40CB9801E] Building the iOS device runner failed. Provisioning failed. Check that this team's Apple ID is signed into Xcode (Xcode > Settings > Accounts), then retry.\n\nxcodebuild reported:\n/Users/chris/.nvm/versions/node/v22.20.0/lib/node_modules/@swmansion/argent/dist/ios-device-runner/ArgentRunner/ArgentRunner.xcodeproj: error: No Accounts: Add a new account in Accounts settings. (in target 'ArgentRunnerUITests' from project 'ArgentRunner')\n/Users/chris/.nvm/versions/node/v22.20.0/lib/node_modules/@swmansion/argent/dist/ios-device-runner/ArgentRunner/ArgentRunner.xcodeproj: error: Provisioning profile \"iOS Team Provisioning Profile: *\" doesn't include the currently selected device \"iPhone\" (identifier 00008110-001414E40CB9801E). (in target 'ArgentRunnerUITests' from project 'ArgentRunner')\n/Users/chris/.nvm/versions/node/v22.20.0/lib/node_modules/@swmansion/argent/dist/ios-device-runner/ArgentRunner/ArgentRunner.xcodeproj: error: No Accounts: Add a new account in Accounts settings. (in target 'ArgentRunner' from project 'ArgentRunner')\n/Users/chris/.nvm/versions/node/v22.20.0/lib/node_modules/@swmansion/argent/dist/ios-device-runner/ArgentRunner/ArgentRunner.xcodeproj: error: Provisioning profile \"iOS Team Provisioning Profile: *\" doesn't include the currently selected device \"iPhone\" (identifier 00008110-001414E40CB9801E). (in target 'ArgentRunner' from project 'ArgentRunner')",
+      "durationMs": 10982
+    }
+  ],
+  "startedAt": 1790353547754,
+  "durationMs": 10983
+}

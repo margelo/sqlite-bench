@@ -1,0 +1,16 @@
+[
+  {
+    "started": 1790353548800,
+    "kind": "diagnostic",
+    "reason": "File names collided and Unicode alias produced invalid JSON. Rerun diagnostics with unique files and numeric code units."
+  },
+  {
+    "started": 1790353822289,
+    "kind": "diagnostic",
+    "reason": "Unicode alias caused invalid JSON export for Nitro. Complete main diagnostics collected on physical devices using numeric code units."
+  },
+  {
+    "started": 1790353997981,
+    "kind": "diagnostic"
+  }
+]
