@@ -1,18 +1,20 @@
 # Results, 13 November 2026
 
-These runs compare op-sqlite 19.0.5, Nitro SQLite 10.3.0 and expo-sqlite 58.0.17 on Expo SDK 58 (React Native 0.88.1, Hermes) in Release builds. They cover the four tests from the original benchmark screen on a Galaxy S10 5G, the iOS simulator and the Android emulator, the same tests on F2FS with batch atomic writes off and on, and the full suite with prepared statements, batches, raw arrays and the newer cases on the iOS simulator, the Android emulator and the Galaxy S10.
+These runs compare op-sqlite 19.0.5, Nitro SQLite 10.3.0 and expo-sqlite 58.0.17 on Expo SDK 58 (React Native 0.88.1, Hermes) in Release builds. They cover the four tests from the original benchmark screen on a Galaxy S10 5G, an iPhone 14 Pro, the iOS simulator and the Android emulator, the same tests on F2FS with batch atomic writes off and on, and the full suite with prepared statements, batches, raw arrays and the newer cases on the iOS simulator, the Android emulator, the Galaxy S10 and the iPhone 14 Pro.
 
 ## Summary
 
-Nitro SQLite reads faster than op-sqlite on every device. On "select + read props", which runs 1,000 queries of 1,000 rows and reads every property, Nitro took 3,212 ms on the Galaxy S10 against op-sqlite's 4,864 ms (1.51×), and was 1.22× to 1.36× faster in the simulator and emulator runs.
+Nitro SQLite reads faster than op-sqlite on every device. On "select + read props", which runs 1,000 queries of 1,000 rows and reads every property, Nitro took 3,212 ms on the Galaxy S10 against op-sqlite's 4,864 ms (1.51×). On the iPhone 14 Pro it took 328 ms against 429 ms (1.31×), and it was 1.22× to 1.36× faster in the simulator and emulator runs.
 
 Single-row commits, the sync and async insert tests, are level. With batch atomic writes off for both, the two libraries stay within 6% of each other on every device, because each of those tests is mostly 1,000 disk syncs.
 
-The transaction insert runs 1,000 awaited inserts inside one transaction. Nitro was 1.90× faster on the Galaxy S10 (484 ms against 918 ms). On the iOS simulator op-sqlite was faster (24 ms against 27 ms), and on the Android emulator the two were within 13%.
+The transaction insert runs 1,000 awaited inserts inside one transaction. Nitro was 1.90× faster on the Galaxy S10 (484 ms against 918 ms). On the iOS simulator op-sqlite was faster (24 ms against 27 ms), on the iPhone 14 Pro the two were level (55 ms each), and on the Android emulator they were within 13%.
 
 Turning on F2FS batch atomic writes for both libraries shortened commits on the emulated F2FS volume by about 10–20% for both, and the ratios between them stayed within the run-to-run spread. Nitro's lead on reads comes from its result conversion, not from a compile flag.
 
 In the full suite on the Galaxy S10, Nitro SQLite was faster in 17 of the 24 cases that both libraries support. Its largest leads were async inserts inside an explicit transaction (3.01×), prepared sync full reads (2.60×) and the 100,000-row async read (2.16×). While that large result loaded, the longest frame gap was 55 ms with Nitro against 209 ms with op-sqlite.
+
+On the iPhone 14 Pro, Nitro SQLite was faster in 15 of the 24 cases. It was slower on async inserts inside an explicit transaction (0.81× ordinary, 0.68× prepared), on 250 point reads in flight (0.65×), and on the longest frame gap during the 100,000-row read (78 ms against 53 ms), although that read finished sooner (78 ms against 95 ms). Most of the async losses come from promise layers in Nitro SQLite's JavaScript wrapper ([#495](https://github.com/margelo/react-native-nitro-sqlite/issues/495), fixed in [#496](https://github.com/margelo/react-native-nitro-sqlite/pull/496)). The frame gap is tracked in [#497](https://github.com/margelo/react-native-nitro-sqlite/issues/497).
 
 On the same Galaxy S10 in September, with Nitro SQLite main before 10.2.0, the read test took 18,517 ms with Nitro and 4,843 ms with op-sqlite.
 
@@ -36,6 +38,17 @@ The iPhone simulator and Android emulator ran on an Apple Silicon Mac with other
 | async insert | 4,798 (4,696–5,188) | – | 4,695 (4,587–4,833) | 10,265 (9,575–10,556) | 1.02 |
 | tx insert | 918 (333–1,088) | – | 484 (244–730) | 2,445 (2,165–2,646) | 1.90 |
 | select + read props | 4,864 (3,435–5,691) | 10,046 (8,767–11,131) | 3,212 (2,569–3,825) | 28,931 (24,821–30,993) | 1.51 |
+
+### iPhone 14 Pro, iOS 27.2.1, physical phone
+
+3 launches × 3 rounds. Median ms, minimum to maximum in brackets.
+
+| Test | op-sqlite | op-sqlite HostObjects | Nitro SQLite | expo-sqlite | op-sqlite ÷ Nitro |
+|---|---:|---:|---:|---:|---:|
+| sync insert | 332 (330–340) | – | 335 (331–346) | 341 (336–349) | 0.99 |
+| async insert | 347 (344–353) | – | 353 (349–361) | 398 (392–410) | 0.98 |
+| tx insert | 55 (40–56) | – | 55 (51–58) | 118 (116–120) | 0.99 |
+| select + read props | 429 (426–431) | 676 (672–680) | 328 (327–330) | 1,081 (1,074–1,093) | 1.31 |
 
 ### iPhone 18 Pro simulator, iOS 27
 
@@ -88,6 +101,7 @@ Each screenshot pair shows one launch, with the top of the screen first and the 
 | Device | Screenshots |
 |---|---|
 | Galaxy S10 | run 1 [top](screenshots/galaxy-s10-original/run1-1-top.jpg) and [bottom](screenshots/galaxy-s10-original/run1-2-bottom.jpg), run 2 [top](screenshots/galaxy-s10-original/run2-1-top.jpg) and [bottom](screenshots/galaxy-s10-original/run2-2-bottom.jpg), run 3 [top](screenshots/galaxy-s10-original/run3-1-top.jpg) and [bottom](screenshots/galaxy-s10-original/run3-2-bottom.jpg) |
+| iPhone 14 Pro | run 1 [top](screenshots/iphone-14-pro-original/run1-1-top.jpg) and [bottom](screenshots/iphone-14-pro-original/run1-2-bottom.jpg), run 2 [top](screenshots/iphone-14-pro-original/run2-1-top.jpg) and [bottom](screenshots/iphone-14-pro-original/run2-2-bottom.jpg), run 3 [top](screenshots/iphone-14-pro-original/run3-1-top.jpg) and [bottom](screenshots/iphone-14-pro-original/run3-2-bottom.jpg) |
 | iPhone simulator | [top](screenshots/iphone-simulator-original/1-top.jpg) and [bottom](screenshots/iphone-simulator-original/2-bottom.jpg) |
 | Android emulator, ext4 | [top](screenshots/android-emulator-ext4-original/1-top.jpg) and [bottom](screenshots/android-emulator-ext4-original/2-bottom.jpg) |
 | Android emulator, F2FS, batch atomic writes off | [top](screenshots/android-emulator-f2fs-off-original/1-top.jpg) and [bottom](screenshots/android-emulator-f2fs-off-original/2-bottom.jpg) |
@@ -100,54 +114,58 @@ Each screenshot pair shows one launch, with the top of the screen first and the 
 
 ## Suite
 
-The suite uses 250 rows, one warmup round and three measured rounds, and rotates the library order for every case. Each cell shows op-sqlite's and Nitro SQLite's median and the ratio, where a value above 1 means Nitro was faster. The Expo numbers are in the data files. The iPhone simulator and the Galaxy S10 ran the suite once. The Android emulator ran it twice, and the table shows the second run, which has a screenshot of every page. The Galaxy S10 run and the second emulator run used the same Release build on 14 November.
+The suite uses 250 rows, one warmup round and three measured rounds, and rotates the library order for every case. Each cell shows op-sqlite's and Nitro SQLite's median and the ratio, where a value above 1 means Nitro was faster. The Expo numbers are in the data files. The iPhone simulator, the Galaxy S10 and the iPhone 14 Pro ran the suite once. The Android emulator ran it twice, and the table shows the second run, which has a screenshot of every page. The Galaxy S10, iPhone 14 Pro and second emulator runs used the same source on 14 November.
 
-| Case | iPhone simulator: op / Nitro ms | Android emulator: op / Nitro ms | Galaxy S10: op / Nitro ms |
-|---|---:|---:|---:|
-| sync-insert | 86.7 / 85.3 (1.02×) | 282.4 / 283.1 (1.00×) | 1,118.9 / 1,201.8 (0.93×) |
-| async-insert | 93.8 / 102.0 (0.92×) | 308.3 / 307.3 (1.00×) | 1,268.7 / 1,306.1 (0.97×) |
-| transaction-insert | 10.6 / 10.3 (1.03×) | 58.6 / 55.8 (1.05×) | 232.9 / 124.1 (1.88×) |
-| full-read | 38.2 / 38.5 (0.99×) | 87.0 / 85.5 (1.02×) | 666.9 / 524.0 (1.27×) |
-| host-creation | 43.2 / – | 96.6 / – | 863.8 / – |
-| host-full-read | 61.6 / – | 113.5 / – | 976.5 / – |
-| ordinary-sync-full-read | 31.8 / 31.3 (1.02×) | 52.7 / 40.9 (1.29×) | 170.9 / 160.8 (1.06×) |
-| prepared-sync-full-read | 46.0 / 30.1 (1.53×) | 81.6 / 53.6 (1.52×) | 293.0 / 112.7 (2.60×) |
-| ordinary-async-full-read | 42.0 / 37.6 (1.12×) | 84.8 / 83.9 (1.01×) | 630.2 / 539.3 (1.17×) |
-| prepared-async-full-read | 60.9 / 40.5 (1.50×) | 114.6 / 86.7 (1.32×) | 1,033.3 / 792.3 (1.30×) |
-| ordinary-sync-point-read | 9.7 / 9.4 (1.03×) | 4.8 / 4.4 (1.09×) | 37.4 / 31.8 (1.17×) |
-| prepared-sync-point-read | 9.0 / 9.2 (0.98×) | 7.9 / 3.4 (2.33×) | 29.4 / 30.5 (0.96×) |
-| ordinary-async-point-read | 12.4 / 14.9 (0.83×) | 43.6 / 55.8 (0.78×) | 292.7 / 227.6 (1.29×) |
-| prepared-async-point-read | 12.7 / 16.6 (0.76×) | 56.3 / 58.3 (0.97×) | 303.7 / 325.5 (0.93×) |
-| ordinary-sync-manual-transaction-insert | 2.1 / 3.5 (0.61×) | 5.1 / 3.1 (1.66×) | 14.6 / 18.9 (0.77×) |
-| prepared-sync-manual-transaction-insert | 2.7 / 2.3 (1.17×) | 4.7 / 4.9 (0.95×) | 16.6 / 16.4 (1.01×) |
-| ordinary-async-manual-transaction-insert | 9.7 / 10.4 (0.93×) | 59.0 / 46.9 (1.26×) | 276.4 / 91.8 (3.01×) |
-| prepared-async-manual-transaction-insert | 10.6 / 10.4 (1.01×) | 61.3 / 58.3 (1.05×) | 274.2 / 239.0 (1.15×) |
-| native-async-batch-insert | 3.3 / 2.6 (1.23×) | 6.5 / 7.9 (0.82×) | 18.3 / 19.9 (0.92×) |
-| raw-sync-full-read | 39.4 / 33.6 (1.17×) | 58.8 / 55.7 (1.06×) | 195.2 / 113.8 (1.71×) |
-| raw-async-full-read | 47.6 / 41.4 (1.15×) | 75.9 / 85.3 (0.89×) | 743.3 / 500.7 (1.48×) |
-| wide-async-full-read | 212.6 / 199.6 (1.07×) | 222.3 / 211.0 (1.05×) | 2,015.9 / 1,671.9 (1.21×) |
-| blob-async-read | 32.9 / 26.3 (1.25×) | 62.4 / 50.1 (1.25×) | 186.3 / 119.6 (1.56×) |
-| large-async-read | 45.2 / 36.2 (1.25×) | 69.0 / 59.6 (1.16×) | 245.5 / 113.7 (2.16×) |
-| large-async-read-frame-gap | 39.8 / 35.2 (1.13×) | 44.9 / 32.5 (1.38×) | 209.2 / 55.5 (3.77×) |
-| concurrent-async-point-read | 9.7 / 8.3 (1.17×) | 5.0 / 9.9 (0.50×) | 25.4 / 33.8 (0.75×) |
-| native-sync-batch-insert | – / 2.0 | – / 4.8 | – / 15.1 |
+| Case | iPhone simulator: op / Nitro ms | Android emulator: op / Nitro ms | Galaxy S10: op / Nitro ms | iPhone 14 Pro: op / Nitro ms |
+|---|---:|---:|---:|---:|
+| sync-insert | 86.7 / 85.3 (1.02×) | 282.4 / 283.1 (1.00×) | 1,118.9 / 1,201.8 (0.93×) | 114.4 / 113.9 (1.00×) |
+| async-insert | 93.8 / 102.0 (0.92×) | 308.3 / 307.3 (1.00×) | 1,268.7 / 1,306.1 (0.97×) | 119.2 / 120.8 (0.99×) |
+| transaction-insert | 10.6 / 10.3 (1.03×) | 58.6 / 55.8 (1.05×) | 232.9 / 124.1 (1.88×) | 25.2 / 21.9 (1.15×) |
+| full-read | 38.2 / 38.5 (0.99×) | 87.0 / 85.5 (1.02×) | 666.9 / 524.0 (1.27×) | 78.9 / 73.8 (1.07×) |
+| host-creation | 43.2 / – | 96.6 / – | 863.8 / – | 76.4 / – |
+| host-full-read | 61.6 / – | 113.5 / – | 976.5 / – | 95.9 / – |
+| ordinary-sync-full-read | 31.8 / 31.3 (1.02×) | 52.7 / 40.9 (1.29×) | 170.9 / 160.8 (1.06×) | 69.3 / 71.4 (0.97×) |
+| prepared-sync-full-read | 46.0 / 30.1 (1.53×) | 81.6 / 53.6 (1.52×) | 293.0 / 112.7 (2.60×) | 86.4 / 67.4 (1.28×) |
+| ordinary-async-full-read | 42.0 / 37.6 (1.12×) | 84.8 / 83.9 (1.01×) | 630.2 / 539.3 (1.17×) | 79.3 / 74.2 (1.07×) |
+| prepared-async-full-read | 60.9 / 40.5 (1.50×) | 114.6 / 86.7 (1.32×) | 1,033.3 / 792.3 (1.30×) | 97.6 / 72.9 (1.34×) |
+| ordinary-sync-point-read | 9.7 / 9.4 (1.03×) | 4.8 / 4.4 (1.09×) | 37.4 / 31.8 (1.17×) | 15.5 / 15.1 (1.03×) |
+| prepared-sync-point-read | 9.0 / 9.2 (0.98×) | 7.9 / 3.4 (2.33×) | 29.4 / 30.5 (0.96×) | 25.8 / 14.5 (1.78×) |
+| ordinary-async-point-read | 12.4 / 14.9 (0.83×) | 43.6 / 55.8 (0.78×) | 292.7 / 227.6 (1.29×) | 35.2 / 30.6 (1.15×) |
+| prepared-async-point-read | 12.7 / 16.6 (0.76×) | 56.3 / 58.3 (0.97×) | 303.7 / 325.5 (0.93×) | 35.8 / 39.9 (0.90×) |
+| ordinary-sync-manual-transaction-insert | 2.1 / 3.5 (0.61×) | 5.1 / 3.1 (1.66×) | 14.6 / 18.9 (0.77×) | 7.5 / 7.9 (0.95×) |
+| prepared-sync-manual-transaction-insert | 2.7 / 2.3 (1.17×) | 4.7 / 4.9 (0.95×) | 16.6 / 16.4 (1.01×) | 7.2 / 2.9 (2.51×) |
+| ordinary-async-manual-transaction-insert | 9.7 / 10.4 (0.93×) | 59.0 / 46.9 (1.26×) | 276.4 / 91.8 (3.01×) | 12.2 / 15.0 (0.81×) |
+| prepared-async-manual-transaction-insert | 10.6 / 10.4 (1.01×) | 61.3 / 58.3 (1.05×) | 274.2 / 239.0 (1.15×) | 12.0 / 17.6 (0.68×) |
+| native-async-batch-insert | 3.3 / 2.6 (1.23×) | 6.5 / 7.9 (0.82×) | 18.3 / 19.9 (0.92×) | 3.5 / 4.9 (0.71×) |
+| raw-sync-full-read | 39.4 / 33.6 (1.17×) | 58.8 / 55.7 (1.06×) | 195.2 / 113.8 (1.71×) | 79.0 / 70.0 (1.13×) |
+| raw-async-full-read | 47.6 / 41.4 (1.15×) | 75.9 / 85.3 (0.89×) | 743.3 / 500.7 (1.48×) | 86.4 / 77.5 (1.12×) |
+| wide-async-full-read | 212.6 / 199.6 (1.07×) | 222.3 / 211.0 (1.05×) | 2,015.9 / 1,671.9 (1.21×) | 295.3 / 276.0 (1.07×) |
+| blob-async-read | 32.9 / 26.3 (1.25×) | 62.4 / 50.1 (1.25×) | 186.3 / 119.6 (1.56×) | 48.8 / 42.5 (1.15×) |
+| large-async-read | 45.2 / 36.2 (1.25×) | 69.0 / 59.6 (1.16×) | 245.5 / 113.7 (2.16×) | 94.5 / 78.0 (1.21×) |
+| large-async-read-frame-gap | 39.8 / 35.2 (1.13×) | 44.9 / 32.5 (1.38×) | 209.2 / 55.5 (3.77×) | 52.7 / 77.7 (0.68×) |
+| concurrent-async-point-read | 9.7 / 8.3 (1.17×) | 5.0 / 9.9 (0.50×) | 25.4 / 33.8 (0.75×) | 16.4 / 25.3 (0.65×) |
+| native-sync-batch-insert | – / 2.0 | – / 4.8 | – / 15.1 | – / 2.3 |
 
-On every device, Nitro SQLite is ahead on prepared full reads, BLOBs, the 20-column read and the large result, and the longest frame gap while the 100,000-row result loads is shorter. Plain full reads are level on the iPhone simulator and the Android emulator, and 1.27× faster on the Galaxy S10.
+On every device, Nitro SQLite is ahead on prepared full reads, BLOBs, the 20-column read and the large result. The longest frame gap while the 100,000-row result loads is shorter on every device except the iPhone 14 Pro. Plain full reads are level on the iPhone simulator and the Android emulator, 1.07× faster on the iPhone 14 Pro and 1.27× faster on the Galaxy S10.
 
 The emulator's ratios moved a lot between its two runs. For example, the plain full read went from 1.77× to 1.02×, so a single emulator result is only a rough guide. Both runs are in the data file.
 
-Some results go the other way and are worth profiling:
+Some results go the other way:
 
-- Ordinary sync inserts inside an explicit transaction were 0.61× on the iPhone simulator and 0.77× on the Galaxy S10, but 1.66× in the second emulator run.
-- Native async batch inserts were 0.82× on the Android emulator and 0.92× on the Galaxy S10.
-- Async point lookups were 0.76× to 0.83× on the iPhone simulator and 0.78× (ordinary) on the Android emulator. On the Galaxy S10, prepared async point lookups were 0.93× and ordinary ones 1.29×.
-- All point lookups in flight at once came out at 0.50× on the Android emulator and 0.75× on the Galaxy S10, while the iPhone simulator shows the opposite. Their samples spread widely: on the phone, op-sqlite ranged from 16 to 37 ms and Nitro from 31 to 40 ms.
-- Async raw array reads were 0.89× in the second emulator run, against 1.15× on the iPhone simulator and 1.48× on the Galaxy S10.
+- 250 point reads in flight came out at 0.65× on the iPhone 14 Pro, 0.75× on the Galaxy S10 and 0.50× on the Android emulator, while the iPhone simulator shows the opposite.
+- Async inserts inside an explicit transaction were 0.81× (ordinary) and 0.68× (prepared) on the iPhone 14 Pro.
+- Async point lookups were 0.76× to 0.83× on the iPhone simulator and 0.78× (ordinary) on the Android emulator. Prepared async point lookups were 0.90× on the iPhone 14 Pro and 0.93× on the Galaxy S10, while ordinary ones were faster with Nitro on both phones.
+- On the iPhone 14 Pro, the longest frame gap during the 100,000-row read was 78 ms with Nitro against 53 ms with op-sqlite.
+- Ordinary sync inserts inside an explicit transaction were 0.61× on the iPhone simulator, 0.77× on the Galaxy S10 and 0.95× on the iPhone 14 Pro, but 1.66× in the second emulator run.
+- Native async batch inserts were 0.71× on the iPhone 14 Pro, 0.82× on the Android emulator and 0.92× on the Galaxy S10, with one iPhone sample at 73 ms.
+- Async raw array reads were 0.89× in the second emulator run.
 - Single-row inserts on the Galaxy S10 were 0.93× (sync) and 0.97× (async) in the suite, and level in the original four tests on the same phone.
+
+A per-call probe on both phones traced the async losses to promise layers in Nitro SQLite's JavaScript wrapper ([#495](https://github.com/margelo/react-native-nitro-sqlite/issues/495)). Removing them in [#496](https://github.com/margelo/react-native-nitro-sqlite/pull/496) cut 250 point reads in flight on the Galaxy S10 from 138 to 153 µs per query to 100 to 102 µs (op-sqlite: 86 to 99 µs), and sequential async point reads on the iPhone 14 Pro from about 42 µs to 37 µs (op-sqlite: 42 to 46 µs). The iPhone frame gap is tracked in [#497](https://github.com/margelo/react-native-nitro-sqlite/issues/497).
 
 The first emulator run showed prepared-statement inserts inside a transaction at 0.34× (sync) and 0.55× (async). The second emulator run (0.95× and 1.05×) and the Galaxy S10 (1.01× and 1.15×) did not repeat it.
 
-The suite's full screens are in [screenshots/iphone-simulator-suite](screenshots/iphone-simulator-suite), [screenshots/android-emulator-suite](screenshots/android-emulator-suite) and [screenshots/galaxy-s10-suite](screenshots/galaxy-s10-suite). Every run's raw samples and manifest are in [data](data).
+The suite's full screens are in [screenshots/iphone-simulator-suite](screenshots/iphone-simulator-suite), [screenshots/android-emulator-suite](screenshots/android-emulator-suite), [screenshots/galaxy-s10-suite](screenshots/galaxy-s10-suite) and [screenshots/iphone-14-pro-suite](screenshots/iphone-14-pro-suite). Every run's raw samples and manifest are in [data](data).
 
 ## Reproducing the runs
 
