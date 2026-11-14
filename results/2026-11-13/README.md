@@ -96,7 +96,7 @@ The iPhone simulator and Android emulator ran on an Apple Silicon Mac with other
 
 ### Screenshots
 
-Each screenshot pair shows one launch, with the top of the screen first and the remaining tests below it.
+Each screenshot pair shows one launch, with the top of the screen first and the remaining tests below it. [screenshots/full-page](screenshots/full-page) joins each launch's pages into one image that shows all four tests.
 
 | Device | Screenshots |
 |---|---|
@@ -108,8 +108,8 @@ Each screenshot pair shows one launch, with the top of the screen first and the 
 | Android emulator, F2FS, batch atomic writes on | run 1 [top](screenshots/android-emulator-f2fs-on-original/run1-1-top.jpg) and [bottom](screenshots/android-emulator-f2fs-on-original/run1-2-bottom.jpg), run 2 [top](screenshots/android-emulator-f2fs-on-original/run2-1-top.jpg) and [bottom](screenshots/android-emulator-f2fs-on-original/run2-2-bottom.jpg), run 3 [top](screenshots/android-emulator-f2fs-on-original/run3-1-top.jpg) and [bottom](screenshots/android-emulator-f2fs-on-original/run3-2-bottom.jpg) |
 
 <p>
-<img src="screenshots/galaxy-s10-original/run3-1-top.jpg" width="270" alt="Galaxy S10, run 3, top">
-<img src="screenshots/galaxy-s10-original/run3-2-bottom.jpg" width="270" alt="Galaxy S10, run 3, bottom">
+<img src="screenshots/full-page/galaxy-s10-original-run3.jpg" width="270" alt="Galaxy S10, run 3, all four tests">
+<img src="screenshots/full-page/iphone-14-pro-original-run1.jpg" width="270" alt="iPhone 14 Pro, run 1, all four tests">
 </p>
 
 ## Suite
@@ -165,7 +165,7 @@ A per-call probe on both phones traced the async losses to promise layers in Nit
 
 The first emulator run showed prepared-statement inserts inside a transaction at 0.34× (sync) and 0.55× (async). The second emulator run (0.95× and 1.05×) and the Galaxy S10 (1.01× and 1.15×) did not repeat it.
 
-The suite's full screens are in [screenshots/iphone-simulator-suite](screenshots/iphone-simulator-suite), [screenshots/android-emulator-suite](screenshots/android-emulator-suite), [screenshots/galaxy-s10-suite](screenshots/galaxy-s10-suite) and [screenshots/iphone-14-pro-suite](screenshots/iphone-14-pro-suite). Every run's raw samples and manifest are in [data](data).
+The suite's full screens are in [screenshots/iphone-simulator-suite](screenshots/iphone-simulator-suite), [screenshots/android-emulator-suite](screenshots/android-emulator-suite), [screenshots/galaxy-s10-suite](screenshots/galaxy-s10-suite) and [screenshots/iphone-14-pro-suite](screenshots/iphone-14-pro-suite). The same pages joined into one image per device are [Galaxy S10](screenshots/full-page/galaxy-s10-suite.jpg), [iPhone 14 Pro](screenshots/full-page/iphone-14-pro-suite.jpg), [iPhone simulator](screenshots/full-page/iphone-simulator-suite.jpg) and [Android emulator](screenshots/full-page/android-emulator-suite.jpg). Every run's raw samples and manifest are in [data](data).
 
 ## Reproducing the runs
 
