@@ -1,6 +1,6 @@
 # Results, 13 November 2026
 
-These runs compare op-sqlite 19.0.5, Nitro SQLite 10.3.0 and expo-sqlite 58.0.17 on Expo SDK 58 (React Native 0.88.1, Hermes) in Release builds. They cover the four tests from the original benchmark screen on a Galaxy S10 5G, an iPhone 14 Pro, the iOS simulator and the Android emulator, the same tests on F2FS with batch atomic writes off and on, and the full suite with prepared statements, batches, raw arrays and the newer cases on the iOS simulator, the Android emulator, the Galaxy S10 and the iPhone 14 Pro.
+These runs compare op-sqlite 19.0.5, Nitro SQLite 10.3.0 and expo-sqlite 58.0.17 on Expo SDK 58 (React Native 0.88.1, Hermes) in Release builds. They cover the four tests from the original benchmark screen on a Galaxy S10 5G, an iPhone 14 Pro, the iOS simulator and the Android emulator, the same tests on F2FS with batch atomic writes off and on, and the full suite with prepared statements, batches, raw arrays and the newer cases on the iOS simulator, the Android emulator, the Galaxy S10 and the iPhone 14 Pro. Both phones also ran the suite in WAL mode with `synchronous=FULL`.
 
 ## Summary
 
@@ -14,7 +14,9 @@ Turning on F2FS batch atomic writes for both libraries shortened commits on the 
 
 In the full suite on the Galaxy S10, Nitro SQLite was faster in 17 of the 24 cases that both libraries support. Its largest leads were async inserts inside an explicit transaction (3.01×), prepared sync full reads (2.60×) and the 100,000-row async read (2.16×). While that large result loaded, the longest frame gap was 55 ms with Nitro against 209 ms with op-sqlite.
 
-On the iPhone 14 Pro, Nitro SQLite was faster in 15 of the 24 cases. It was slower on async inserts inside an explicit transaction (0.81× ordinary, 0.68× prepared), on 250 point reads in flight (0.65×), and on the longest frame gap during the 100,000-row read (78 ms against 53 ms), although that read finished sooner (78 ms against 95 ms). Most of the async losses come from promise layers in Nitro SQLite's JavaScript wrapper ([#495](https://github.com/margelo/react-native-nitro-sqlite/issues/495), fixed in [#496](https://github.com/margelo/react-native-nitro-sqlite/pull/496)). The frame gap is tracked in [#497](https://github.com/margelo/react-native-nitro-sqlite/issues/497).
+On the iPhone 14 Pro, Nitro SQLite was faster in 15 of the 24 cases. It was slower on async inserts inside an explicit transaction (0.81× ordinary, 0.68× prepared), on 250 point reads in flight (0.65×), and on the longest frame gap during the 100,000-row read (78 ms against 53 ms), although that read finished sooner (78 ms against 95 ms). Part of the async cost comes from promise layers in Nitro SQLite's JavaScript wrapper ([#495](https://github.com/margelo/react-native-nitro-sqlite/issues/495), reduced in [#496](https://github.com/margelo/react-native-nitro-sqlite/pull/496)). The frame gap is tracked in [#497](https://github.com/margelo/react-native-nitro-sqlite/issues/497).
+
+In WAL mode with `synchronous=FULL`, single-row commits were level on both phones, and the losses were the same kind as in the default mode. 250 point reads in flight were slower on both phones (0.47× on the Galaxy S10, 0.60× on the iPhone 14 Pro). On the iPhone the frame gap during the large read (77 ms against 50 ms) and async inserts inside an explicit transaction (0.83×) were also slower.
 
 On the same Galaxy S10 in September, with Nitro SQLite main before 10.2.0, the read test took 18,517 ms with Nitro and 4,843 ms with op-sqlite.
 
@@ -166,6 +168,48 @@ A per-call probe on both phones traced the async losses to promise layers in Nit
 The first emulator run showed prepared-statement inserts inside a transaction at 0.34× (sync) and 0.55× (async). The second emulator run (0.95× and 1.05×) and the Galaxy S10 (1.01× and 1.15×) did not repeat it.
 
 The suite's full screens are in [screenshots/iphone-simulator-suite](screenshots/iphone-simulator-suite), [screenshots/android-emulator-suite](screenshots/android-emulator-suite), [screenshots/galaxy-s10-suite](screenshots/galaxy-s10-suite) and [screenshots/iphone-14-pro-suite](screenshots/iphone-14-pro-suite). The same pages joined into one image per device are [Galaxy S10](screenshots/full-page/galaxy-s10-suite.jpg), [iPhone 14 Pro](screenshots/full-page/iphone-14-pro-suite.jpg), [iPhone simulator](screenshots/full-page/iphone-simulator-suite.jpg) and [Android emulator](screenshots/full-page/android-emulator-suite.jpg). Every run's raw samples and manifest are in [data](data).
+
+## Suite in WAL mode
+
+**Run normalized** sets the same SQLite settings on every connection and checks them before timing: WAL journal mode, `synchronous=FULL`, a 2 MiB page cache and memory temp storage. Each library keeps one connection for the whole run, like an app that keeps its database open ([#8](https://github.com/margelo/sqlite-bench/pull/8)). Before that change, op-sqlite's WAL file survived between samples while the other libraries' WAL files did not, which made op-sqlite's single-row commits on the Galaxy S10 3.7× faster for a reason that had nothing to do with the libraries. Expo's callback transaction case is left out, because its connection settings can't be set outside the timer.
+
+Both phones ran the WAL suite on 14 November, with the same source as the default runs plus #8. The Galaxy S10 ran it twice. The table shows the second run, made while no other app was in use on the phone. Both runs are in the data file.
+
+| Case | Galaxy S10: op / Nitro ms | iPhone 14 Pro: op / Nitro ms |
+|---|---:|---:|
+| sync-insert | 265.9 / 248.2 (1.07×) | 32.6 / 31.6 (1.03×) |
+| async-insert | 435.9 / 381.5 (1.14×) | 41.0 / 43.1 (0.95×) |
+| transaction-insert | 286.7 / 106.4 (2.69×) | 25.0 / 24.6 (1.01×) |
+| full-read | 608.2 / 529.2 (1.15×) | 75.6 / 73.0 (1.04×) |
+| host-creation | 768.2 / – | 77.1 / – |
+| host-full-read | 978.1 / – | 94.4 / – |
+| ordinary-sync-full-read | 164.3 / 102.2 (1.61×) | 70.5 / 64.6 (1.09×) |
+| prepared-sync-full-read | 259.0 / 140.2 (1.85×) | 88.4 / 69.2 (1.28×) |
+| ordinary-async-full-read | 673.0 / 529.6 (1.27×) | 74.3 / 72.7 (1.02×) |
+| prepared-async-full-read | 984.7 / 743.6 (1.32×) | 96.4 / 72.1 (1.34×) |
+| ordinary-sync-point-read | 9.5 / 12.7 (0.75×) | 9.2 / 9.6 (0.95×) |
+| prepared-sync-point-read | 13.8 / 11.6 (1.19×) | 9.0 / 9.3 (0.97×) |
+| ordinary-async-point-read | 224.8 / 168.6 (1.33×) | 22.6 / 31.6 (0.72×) |
+| prepared-async-point-read | 245.6 / 226.8 (1.08×) | 25.0 / 28.6 (0.87×) |
+| ordinary-sync-manual-transaction-insert | 9.1 / 8.7 (1.05×) | 5.5 / 5.6 (0.97×) |
+| prepared-sync-manual-transaction-insert | 8.4 / 9.6 (0.88×) | 5.0 / 4.5 (1.12×) |
+| ordinary-async-manual-transaction-insert | 225.6 / 52.2 (4.33×) | 23.7 / 28.5 (0.83×) |
+| prepared-async-manual-transaction-insert | 198.3 / 183.6 (1.08×) | 22.6 / 27.3 (0.83×) |
+| native-async-batch-insert | 9.7 / 7.5 (1.29×) | 4.9 / 3.4 (1.43×) |
+| raw-sync-full-read | 146.2 / 102.8 (1.42×) | 78.2 / 72.0 (1.09×) |
+| raw-async-full-read | 583.5 / 380.0 (1.54×) | 85.4 / 76.9 (1.11×) |
+| wide-async-full-read | 1,821.8 / 1,669.0 (1.09×) | 288.8 / 269.1 (1.07×) |
+| blob-async-read | 169.9 / 127.4 (1.33×) | 48.0 / 44.2 (1.09×) |
+| large-async-read | 235.9 / 116.7 (2.02×) | 95.9 / 78.9 (1.22×) |
+| large-async-read-frame-gap | 147.9 / 62.9 (2.35×) | 49.6 / 76.5 (0.65×) |
+| concurrent-async-point-read | 14.3 / 30.3 (0.47×) | 13.8 / 22.9 (0.60×) |
+| native-sync-batch-insert | – / 6.7 | – / 2.6 |
+
+On the Galaxy S10, Nitro SQLite's median was lower in 21 of the 24 shared cases, but the samples in this run spread widely, and the two libraries' ranges overlap in 19 cases. Nitro was clearly faster on the callback transaction insert, prepared sync full reads, the 100,000-row read (117 ms against 236 ms) and the frame gap during that read (63 ms against 148 ms). It was clearly slower only on 250 point reads in flight (30.3 ms against 14.3 ms).
+
+On the iPhone 14 Pro, Nitro was faster in 14 of the 24 cases, 10 of them with separate ranges, mostly reads and the native batch. It was clearly slower on 250 point reads in flight (22.9 ms against 13.8 ms), the frame gap during the large read (77 ms against 50 ms) and async inserts inside an explicit transaction (28.5 ms against 23.7 ms ordinary, 27.3 ms against 22.6 ms prepared). Ordinary sync inserts inside a transaction differed by 0.1 ms.
+
+The WAL screens are in [screenshots/galaxy-s10-normalized](screenshots/galaxy-s10-normalized) and [screenshots/iphone-14-pro-normalized](screenshots/iphone-14-pro-normalized), joined into one image each as [Galaxy S10](screenshots/full-page/galaxy-s10-normalized.jpg) and [iPhone 14 Pro](screenshots/full-page/iphone-14-pro-normalized.jpg). The raw samples and manifests are in [data/galaxy-s10-normalized.jsonl](data/galaxy-s10-normalized.jsonl) and [data/iphone-14-pro-normalized.jsonl](data/iphone-14-pro-normalized.jsonl).
 
 ## Reproducing the runs
 
