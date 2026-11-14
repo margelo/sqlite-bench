@@ -39,6 +39,7 @@ export default function HomeScreen() {
         <Pressable testID="run-defaults" onPress={() => start("library defaults")} style={styles.share}><Text style={styles.shareText}>Run defaults</Text></Pressable>
         <Pressable testID="run-normalized" onPress={() => start("normalized WAL/FULL")} style={styles.share}><Text style={styles.shareText}>Run normalized</Text></Pressable>
         <Link testID="open-original" href="/original" style={[styles.share, styles.shareText]}>Original four tests</Link>
+        <Link testID="open-overhead" href="/overhead" style={[styles.share, styles.shareText]}>Per-call overhead</Link>
       </View>}
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
         {run && <>
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
   barTrack: { height: 10, backgroundColor: "#1c1c1e", borderRadius: 5, overflow: "hidden" },
   barFill: { height: "100%", borderRadius: 5 }, detail: { color: "#999", fontSize: 11 },
   warning: { color: "#f0a500", fontSize: 12, lineHeight: 18 },
-  actions: { flexDirection: "row", gap: 8, marginBottom: 8 },
+  actions: { flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 8 },
   share: { borderColor: "#777", borderWidth: 1, borderRadius: 8, padding: 12, alignItems: "center" },
   shareText: { color: "white", fontSize: 13 },
   footnote: { fontSize: 11, color: "#888", lineHeight: 16, paddingTop: 8 },
