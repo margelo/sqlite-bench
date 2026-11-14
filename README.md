@@ -1,6 +1,6 @@
 # SQLite benchmark
 
-This Expo app compares ordinary SQLite operations through op-sqlite, Nitro SQLite, and expo-sqlite. Build a Release app for iOS or Android, open it, and tap **Run defaults** for the suite, **Run normalized** for the suite with matched PRAGMAs, or **Original four tests** for the 1,000-row screen from the published charts. Use **Share run data and manifest** to save the samples, checksums, failures, and environment details as JSON.
+This Expo app compares ordinary SQLite operations through op-sqlite, Nitro SQLite, and expo-sqlite. Build a Release app for iOS or Android, open it, and tap **Run defaults** for the suite, **Run normalized** for the suite with matched PRAGMAs, or **Original four tests** for the 1,000-row screen from the published charts. **Per-call overhead** times short queries through Nitro SQLite's public API, through `NitroSQLite.native` and through op-sqlite, so you can see how much of a call is spent in JavaScript. Use **Share run data and manifest** to save the samples, checksums, failures, and environment details as JSON.
 
 The latest results, with screenshots and raw samples, are in [results/2026-11-13](results/2026-11-13).
 
